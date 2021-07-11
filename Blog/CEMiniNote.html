@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>某沙盒游戏二进制逆向研究笔记 | 潇淼文档</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bcbe8dcd550616b188183a023ba3e682";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <meta name="description" content="MiniDoc">
+    <meta name="robots" content="all">
+    <meta name="author" content="msk11@qq.com">
+    <meta name="copyright" content="Hcat">
+    <meta name="revisit-after" content="7 days">
+    <meta name="keywords" content="潇淼文档,潇淼,迷你世界,文档,迷你,mini,doc,世界,MiniWorld,脚本,教程">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.84203ac8.css" as="style"><link rel="preload" href="/assets/js/app.ef735673.js" as="script"><link rel="preload" href="/assets/js/2.b51029ec.js" as="script"><link rel="preload" href="/assets/js/13.026b2d2d.js" as="script"><link rel="prefetch" href="/assets/js/10.08f53c0a.js"><link rel="prefetch" href="/assets/js/11.852fe533.js"><link rel="prefetch" href="/assets/js/12.387441d1.js"><link rel="prefetch" href="/assets/js/14.234e0442.js"><link rel="prefetch" href="/assets/js/15.05982601.js"><link rel="prefetch" href="/assets/js/16.6ddb7b54.js"><link rel="prefetch" href="/assets/js/17.c8e27348.js"><link rel="prefetch" href="/assets/js/18.bea8b7b8.js"><link rel="prefetch" href="/assets/js/19.8032166c.js"><link rel="prefetch" href="/assets/js/20.e8575946.js"><link rel="prefetch" href="/assets/js/21.78fb8e90.js"><link rel="prefetch" href="/assets/js/22.1d33cf5f.js"><link rel="prefetch" href="/assets/js/23.7b04bc71.js"><link rel="prefetch" href="/assets/js/24.e2b60efb.js"><link rel="prefetch" href="/assets/js/25.5d5a4485.js"><link rel="prefetch" href="/assets/js/26.8173389b.js"><link rel="prefetch" href="/assets/js/27.b71f4454.js"><link rel="prefetch" href="/assets/js/28.e1ca4b97.js"><link rel="prefetch" href="/assets/js/29.929be50a.js"><link rel="prefetch" href="/assets/js/3.df829fda.js"><link rel="prefetch" href="/assets/js/30.7e96e268.js"><link rel="prefetch" href="/assets/js/31.c0e69237.js"><link rel="prefetch" href="/assets/js/32.7a31538c.js"><link rel="prefetch" href="/assets/js/33.9f9fcbee.js"><link rel="prefetch" href="/assets/js/34.1a23bcc8.js"><link rel="prefetch" href="/assets/js/35.d646c169.js"><link rel="prefetch" href="/assets/js/36.23fde348.js"><link rel="prefetch" href="/assets/js/37.72568f5d.js"><link rel="prefetch" href="/assets/js/38.c16df410.js"><link rel="prefetch" href="/assets/js/39.beaf8a5b.js"><link rel="prefetch" href="/assets/js/4.af196e2c.js"><link rel="prefetch" href="/assets/js/40.a6c3be0f.js"><link rel="prefetch" href="/assets/js/41.55dcf4c0.js"><link rel="prefetch" href="/assets/js/42.194c1906.js"><link rel="prefetch" href="/assets/js/43.23218e8b.js"><link rel="prefetch" href="/assets/js/44.d7674f0c.js"><link rel="prefetch" href="/assets/js/45.98b149c7.js"><link rel="prefetch" href="/assets/js/46.b5d5ec9d.js"><link rel="prefetch" href="/assets/js/47.b3a38716.js"><link rel="prefetch" href="/assets/js/48.ea0a7e3f.js"><link rel="prefetch" href="/assets/js/5.18feaa6c.js"><link rel="prefetch" href="/assets/js/6.7e6925c7.js"><link rel="prefetch" href="/assets/js/7.1b7a5d04.js"><link rel="prefetch" href="/assets/js/8.f363ac78.js"><link rel="prefetch" href="/assets/js/9.61f6ba62.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.84203ac8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">潇淼文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Hcat.html" class="nav-link">
+  联系我们
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="http://xor.hcat.work/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  XOR加密
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Hcat.html" class="nav-link">
+  联系我们
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="http://xor.hcat.work/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  XOR加密
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本要素</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Blog/guide.html" class="sidebar-link">开发者脚本如何使用</a></li><li><a href="/Blog/CEMiniNote.html" aria-current="page" class="active sidebar-link">某沙盒游戏二进制逆向研究笔记</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Lua脚本</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>拓展元素</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>商业化[圈钱]</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>游戏全局数据表</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="某沙盒游戏二进制逆向研究笔记"><a href="#某沙盒游戏二进制逆向研究笔记" class="header-anchor">#</a> 某沙盒游戏二进制逆向研究笔记</h1> <div class="language-assembly extra-class"><pre class="language-text"><code>// Author: Hcat
+// OiDate: 2020年3月8日16:54:10
+// 著作归属: 
+// 阅读本笔记务必遵循 CC BY-NC-SA 4.0 国际版权许可协议
+// 即 署名 - 非商业性 - 相同方式共享
+</code></pre></div><p>篇内搜值均为单浮点型</p> <p>改mode
+0单人 1创造 2极限 3创造转生存 4编辑 5运行 6修改生存(冒险自由模式) 9录像</p> <p>Tips: 4、5模式转 1、3后不可恢复	修改9后坏档不可恢复，请慎用</p> <p>视角1背2正</p> <p>总基址思路：找到连跳永久基址，反汇编内存区域地址即总基址</p> <hr> <p>人物行为</p> <div class="language- extra-class"><pre class="language-text"><code>空0 地1  
+水中256 水底257 
+岩浆 65792  底65793 
+蜂蜜 16777472 底 16777473
+</code></pre></div><p>连跳</p> <div class="language- extra-class"><pre class="language-text"><code>+A8
++98
+</code></pre></div><p>落地加速：
+连跳+8
+连跳+08=穿墙</p> <p>氧气
+3C+总偏
+思路：满氧为10，进水一个气泡一氧气</p> <p>奇幻飞天
+进水查看改写值
+倒数第二条访问</p> <div class="language- extra-class"><pre class="language-text"><code>[esi+A9]
+00改为01
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>快速换弹
+换弹查弹药数被改写值
+操作指令处下断点
+断点第一个返回值 参数或类似于FFFFFFFF 00000000 00000000 偏移向上找-40
+有一处jns判断（下方指令为fadd ）
+nop掉即可
+</code></pre></div><p>子弹汇聚
+查枪械弹道偏离值的被改写值
+第一个操作指令处向上找jp判断语句
+将jp改为jmp</p> <p>飞天：</p> <div class="language- extra-class"><pre class="language-text"><code>静止 0
+蹲下 262144
+飞天 524288
+飞天疾跑 1572864
+疾跑 1048576
+跳起 4194304
+</code></pre></div><p>窗口组件：</p> <div class="language- extra-class"><pre class="language-text"><code>Hide：16777216
+Show：16777472
+不为0地址必定小于29开头
+一般是1885EE90附近，独立特征
+648窗口健康系统
+</code></pre></div><p>玩法编辑留档
+一级偏移：首个搜索结果
+1885EE68+29
+1692C9A0+29c
+1183F910+50</p> <p>ecxESC菜单
+1CEC6878+10</p> <p>为什么限制方块不可被挖掘？</p> <p>特定时间内挖掘方块的总硬度超过2147483647</p> <p>则会被判定为基岩</p> <p>12119970+29=12119947</p> <p>iworldImpl_micro.dll+DDD6E0</p> <p>人物加速A：（需锁定）</p> <div class="language- extra-class"><pre class="language-text"><code>无状态 10
+香溢烤鸡 15
+机枪速度减3
+</code></pre></div><p>19091410+29
+190922C0+50
+-----188BFF00-4
+190922C0+10</p> <p>模式
+672493e4
+2DAD57C8+60</p> <p>飞行模式</p> <div class="language-assembly extra-class"><pre class="language-text"><code>75 14 8B 06 83 B8 ?? 04 00 00 00
+EB 14 8B 06 83 B8 ?? 04 00 00 00
+</code></pre></div><p>iworldImpl_micro.dll+8380EC - jmp iworldImpl_micro.dll+838102
+iworldImpl_micro.dll+8380EE - mov eax,[esi]
+iworldImpl_micro.dll+8380F0 - cmp dword ptr [eax+0000044C],00 { 0 }
+iworldImpl_micro.dll+8380F7 - je iworldImpl_micro.dll+838133
+iworldImpl_micro.dll+8380F9 - cmp dword ptr [eax+00000450],00 { 0 }
+iworldImpl_micro.dll+838100 - jne iworldImpl_micro.dll+838133
+iworldImpl_micro.dll+838102 - mov edi,[esi]</p> <p>以饥饿度为原点
+偏移+C 某计时器 8进制计时器</p> <p>偏移+8为 未知坐标 计步器
+超过4000归零，重新记步</p> <p>偏移+4为饱食度</p> <p>食用食物可增加 上限100
+随一个计时器周期性减少，每次减少5
+回复血量优先扣除饱食度，饱食度扣至0后开始扣除饥饿度
+死亡后归零
+1FEB67B0+6E0</p> <p>YH的旧版留档参考
+游泳飞天C6 86 89 00 00 00 01
+水下行走C6 80 89 00 00 00 00
+旧的参考C6 81 89 00 00 00 ?? 8D</p> <p>新搜可出数据C6 ?? A9 00 00 00 00</p> <p>C6 80 89 00 00 00 00</p> <p>b旧
+C6 86 9D 00 00 00 00 8D 45 E8 50
+游泳飞天
+C6 86 A9 00 00 00 00 8D 45 E8 50</p> <p>水下行走</p> <div class="language-assembly extra-class"><pre class="language-text"><code>C6 80 A9 00 00 00 00
+[ENABLE]
+aobscan(ah,C6 5F C6 86 89 00 00)
+ah:
+db C6 5F C6 86 88 00 00
+[DISABLE]
+aobscan(al,C6 5F C6 86 88 00 00)
+al:
+db C6 5F C6 86 89 00 00
+</code></pre></div><p>掉落无伤</p> <div class="language-assembly extra-class"><pre class="language-text"><code>C6 86 A8 00 00 00 01 D9 96 80 00
+
+
+C6 86 A8 00 00 00 01
+</code></pre></div><p>进水闪退</p> <div class="language-assembly extra-class"><pre class="language-text"><code>C6 86 A8 00 00 00 01 D9 96 80 00
+</code></pre></div><p>稳健的步伐(:</p> <div class="language-assembly extra-class"><pre class="language-text"><code>C6 86 B5 00 00 00 01 D9 96 8C 00
+</code></pre></div><p>无视距离
+旧</p> <div class="language-assembly extra-class"><pre class="language-text"><code>53 8B 5D 08 D9 5D F0 8B 03
+</code></pre></div><p>新</p> <div class="language-assembly extra-class"><pre class="language-text"><code>53 8B 5D 08 56 8B F0 8B 03
+</code></pre></div><p>模糊</p> <div class="language-assembly extra-class"><pre class="language-text"><code>53 8B 5D 08 ?? ?? F0 8B 03
+</code></pre></div><p>抓取思路：手持方块物品，挖对应方块id
+空手挖方块</p> <div class="language-assembly extra-class"><pre class="language-text"><code>E8 94 96 FD FF 8B 4E 08 89 46 0C
+</code></pre></div><p>工具挖方块</p> <div class="language-assembly extra-class"><pre class="language-text"><code>E8 54 93 FD FF 39 46 0C
+</code></pre></div><p>nop悬空</p> <div class="language-assembly extra-class"><pre class="language-text"><code>88 86 A8 00 00 00 33 DB
+90 90 90 90 90 90 33 DB
+</code></pre></div><p>水下行走 // nop 74 0F 5F后变游泳飞天</p> <div class="language-assembly extra-class"><pre class="language-text"><code>88 9E A9 00 00 00 5E 8A C3 5B 8B E5 5D
+</code></pre></div><p>岩浆行走</p> <div class="language-assembly extra-class"><pre class="language-text"><code>88 86 AA 00 00 00 8B 86 A4 00 00 00 5B
+</code></pre></div><p>蜂蜜行走</p> <div class="language-assembly extra-class"><pre class="language-text"><code>88 86 AB 00 00 00 5E 5B 8B E5
+</code></pre></div><p>透视类</p> <div class="language-assembly extra-class"><pre class="language-text"><code>89 7E 58 Y轴
+</code></pre></div><div class="language-assembly extra-class"><pre class="language-text"><code>89 48 40 8B 88 4C 01 00 00 89 16 Y轴可改
+</code></pre></div><div class="language-assembly extra-class"><pre class="language-text"><code>03 45 14 89 46 40 80 7D FE 00 改14掉虚空
+</code></pre></div><div class="language-assembly extra-class"><pre class="language-text"><code>89 4E 54 x轴
+89 46 5C Z轴
+</code></pre></div><div class="language-assembly extra-class"><pre class="language-text"><code>iworldImpl_micro.dll+DDD6E0 - 89 46 5C              - mov [esi+5C],eax
+iworldImpl_micro.dll+24BAB8 - 89 4E 54              - mov [esi+54],ecx
+</code></pre></div><div class="language-haskell extra-class"><pre class="language-haskell"><code><span class="token constant">D9</span> <span class="token number">56</span> <span class="token number">08</span> <span class="token number">84</span> <span class="token constant">DB</span>血量
+
+<span class="token constant">C7</span> <span class="token number">46</span> 7C <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token constant">DF</span> <span class="token constant">E0</span> 禁啥来着 此项已遗忘
+
+<span class="token number">75</span> <span class="token number">03</span> <span class="token constant">D9</span> <span class="token number">56</span> <span class="token number">08</span> <span class="token number">84</span> <span class="token constant">DB</span>死亡不复活
+
+
+<span class="token constant">D8</span> <span class="token number">46</span> <span class="token number">08</span> 回血自杀
+<span class="token constant">D9</span> <span class="token number">45</span> <span class="token constant">FC</span> 禁止重生 血锁<span class="token number">0</span>
+<span class="token constant">D9</span> 5D <span class="token constant">FC</span> 死亡保留<span class="token number">1</span>血
+
+<span class="token constant">D9</span> 5E <span class="token number">70</span> 5E 8B <span class="token constant">E5</span> 5D禁止自然掉饥饿
+<span class="token constant">D9</span> 5E <span class="token number">70</span> <span class="token constant">D9</span> <span class="token constant">EE</span>禁止重生恢复饥饿
+
+<span class="token constant">D9</span> 5D <span class="token constant">F8</span> 饥饿锁<span class="token number">0</span>
+<span class="token constant">D9</span> <span class="token number">45</span> <span class="token constant">F8</span> 负饥饿
+<span class="token constant">D9</span> <span class="token number">57</span> <span class="token number">70</span> 8B 0D 3C <span class="token number">15</span> <span class="token number">22</span> <span class="token number">70</span>禁止食物恢复饥饿
+
+点击模式转换按钮的事件
+8B 4E 1C <span class="token constant">C7</span> <span class="token number">46</span> <span class="token number">60</span> <span class="token number">0</span><span class="token operator">?</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span>
+
+模式
+<span class="token number">83</span> <span class="token number">79</span> <span class="token number">60</span> <span class="token number">05</span> 0F <span class="token number">94</span> <span class="token constant">C0</span>
+
+修改模式<span class="token punctuation">[</span><span class="token number">05</span><span class="token punctuation">]</span>
+<span class="token number">15</span> <span class="token number">04</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">05</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">17</span> <span class="token constant">E3</span> 1D <span class="token number">03</span> 0A <span class="token number">00</span> <span class="token number">00</span>
+
+坐骑相关
+<span class="token constant">DB</span> <span class="token number">80</span> <span class="token number">42</span> <span class="token number">01</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">83</span> <span class="token constant">EC</span> <span class="token number">08</span>
+
+坐骑提示窗
+<span class="token number">89</span> <span class="token number">83</span> <span class="token number">44</span> <span class="token number">01</span> <span class="token number">00</span> <span class="token number">00</span> 5E <span class="token number">33</span> <span class="token constant">C0</span>
+
+无限弹药
+前<span class="token number">74</span> <span class="token number">04</span> <span class="token number">49</span>后<span class="token hvariable">nop</span> <span class="token number">89</span> 4E 0C 
+
+存档模式
+<span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">04</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">48</span> <span class="token number">63</span> <span class="token number">61</span> <span class="token number">74</span>
+
+真·修改模式
+<span class="token number">17</span> <span class="token constant">E3</span> 1D <span class="token number">03</span> <span class="token number">15</span> <span class="token number">04</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">04</span> <span class="token number">00</span>
+
+<span class="token number">17</span> <span class="token constant">E3</span> 1D <span class="token number">03</span> <span class="token number">15</span> <span class="token number">04</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">05</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">17</span>
+
+<span class="token number">2020</span>年<span class="token number">3</span>月<span class="token number">12</span>日<span class="token number">0</span><span class="token operator">:</span><span class="token number">58</span><span class="token operator">:</span><span class="token number">32</span>
+敏感词
+8A <span class="token number">10</span> <span class="token number">40</span> 3A <span class="token constant">D3</span> <span class="token number">75</span> <span class="token constant">F9</span> 2B <span class="token constant">C6</span> <span class="token number">50</span> <span class="token number">51</span>
+
+进入地图提示
+<span class="token constant">E4</span> <span class="token constant">B8</span> <span class="token constant">A5</span> <span class="token constant">E7</span> <span class="token constant">A6</span> <span class="token number">81</span> <span class="token constant">E5</span> <span class="token number">88</span> <span class="token constant">B6</span> <span class="token constant">E4</span> <span class="token constant">BD</span> 9C <span class="token constant">E8</span> <span class="token number">89</span> <span class="token constant">B2</span> <span class="token constant">E6</span> <span class="token number">83</span> <span class="token number">85</span> <span class="token constant">E3</span> <span class="token number">80</span> <span class="token number">81</span> <span class="token constant">E6</span> <span class="token number">94</span> <span class="token constant">BF</span> <span class="token constant">E6</span> <span class="token constant">B2</span> <span class="token constant">BB</span> <span class="token constant">E3</span> <span class="token number">80</span> <span class="token number">81</span> <span class="token constant">E6</span> 9A <span class="token constant">B4</span> <span class="token constant">E5</span> 8A 9B <span class="token constant">E7</span> <span class="token constant">AD</span> <span class="token number">89</span> <span class="token constant">E5</span> <span class="token number">86</span> <span class="token number">85</span> <span class="token constant">E5</span> <span class="token constant">AE</span> <span class="token constant">B9</span> <span class="token constant">EF</span> <span class="token constant">BC</span> 8C <span class="token constant">E8</span> <span class="token constant">BF</span> 9D <span class="token constant">E8</span> <span class="token number">80</span> <span class="token number">85</span> <span class="token constant">E5</span> <span class="token constant">B0</span> <span class="token number">86</span> <span class="token constant">E4</span> <span class="token constant">BE</span> 9D <span class="token constant">E6</span> <span class="token constant">B3</span> <span class="token number">95</span> <span class="token constant">E8</span> <span class="token constant">BF</span> <span class="token constant">BD</span> <span class="token constant">E7</span> <span class="token constant">A9</span> <span class="token constant">B6</span> <span class="token constant">E6</span> <span class="token constant">B3</span> <span class="token number">95</span> <span class="token constant">E5</span> <span class="token constant">BE</span> 8B <span class="token constant">E8</span> <span class="token constant">B4</span> <span class="token constant">A3</span> <span class="token constant">E4</span> <span class="token constant">BB</span> <span class="token constant">BB</span>
+
+迷你队长提示完整<span class="token constant">A</span>
+<span class="token number">23</span> <span class="token number">63</span> <span class="token number">36</span> <span class="token number">34</span> <span class="token number">64</span> <span class="token number">65</span> <span class="token number">33</span> <span class="token number">32</span> <span class="token constant">E8</span> <span class="token constant">BF</span> <span class="token constant">B7</span> <span class="token constant">E4</span> <span class="token constant">BD</span> <span class="token constant">A0</span> <span class="token constant">E9</span> <span class="token number">98</span> 9F <span class="token constant">E9</span> <span class="token number">95</span> <span class="token constant">BF</span> <span class="token constant">E6</span> <span class="token constant">B8</span> <span class="token constant">A9</span> <span class="token constant">E9</span> <span class="token constant">A6</span> <span class="token constant">A8</span> <span class="token constant">E6</span> 8F <span class="token number">90</span> <span class="token constant">E7</span> <span class="token constant">A4</span> <span class="token constant">BA</span> <span class="token constant">EF</span> <span class="token constant">BC</span> 9A <span class="token number">23</span> 6E <span class="token constant">E4</span> <span class="token constant">B8</span> <span class="token constant">A5</span> <span class="token constant">E7</span> <span class="token constant">A6</span> <span class="token number">81</span> <span class="token constant">E5</span> <span class="token number">88</span> <span class="token constant">B6</span> <span class="token constant">E4</span> <span class="token constant">BD</span> 9C <span class="token constant">E8</span> <span class="token number">89</span> <span class="token constant">B2</span> <span class="token constant">E6</span> <span class="token number">83</span> <span class="token number">85</span> <span class="token constant">E3</span> <span class="token number">80</span> <span class="token number">81</span> <span class="token constant">E6</span> <span class="token number">94</span> <span class="token constant">BF</span> <span class="token constant">E6</span> <span class="token constant">B2</span> <span class="token constant">BB</span> <span class="token constant">E3</span> <span class="token number">80</span> <span class="token number">81</span> <span class="token constant">E6</span> 9A <span class="token constant">B4</span> <span class="token constant">E5</span> 8A 9B <span class="token constant">E7</span> <span class="token constant">AD</span> <span class="token number">89</span> <span class="token constant">E5</span> <span class="token number">86</span> <span class="token number">85</span> <span class="token constant">E5</span> <span class="token constant">AE</span> <span class="token constant">B9</span> <span class="token constant">EF</span> <span class="token constant">BC</span> 8C <span class="token constant">E8</span> <span class="token constant">BF</span> 9D <span class="token constant">E8</span> <span class="token number">80</span> <span class="token number">85</span> <span class="token constant">E5</span> <span class="token constant">B0</span> <span class="token number">86</span> <span class="token constant">E4</span> <span class="token constant">BE</span> 9D <span class="token constant">E6</span> <span class="token constant">B3</span> <span class="token number">95</span> <span class="token constant">E8</span> <span class="token constant">BF</span> <span class="token constant">BD</span> <span class="token constant">E7</span> <span class="token constant">A9</span> <span class="token constant">B6</span> <span class="token constant">E6</span> <span class="token constant">B3</span> <span class="token number">95</span> <span class="token constant">E5</span> <span class="token constant">BE</span> 8B <span class="token constant">E8</span> <span class="token constant">B4</span> <span class="token constant">A3</span> <span class="token constant">E4</span> <span class="token constant">BB</span> <span class="token constant">BB</span> <span class="token number">00</span> <span class="token constant">FF</span>
+
+潇淼
+<span class="token hvariable">e6</span> <span class="token hvariable">bd</span> <span class="token number">87</span> <span class="token hvariable">e6</span> <span class="token hvariable">b7</span> <span class="token hvariable">bc</span> <span class="token hvariable">e8</span> <span class="token hvariable">bf</span> <span class="token hvariable">b7</span> <span class="token hvariable">e4</span> <span class="token hvariable">bd</span> <span class="token hvariable">a0</span> <span class="token hvariable">e8</span> <span class="token hvariable">be</span> <span class="token number">85</span> <span class="token hvariable">e5</span> 8a <span class="token hvariable">a9</span> <span class="token hvariable">ef</span> <span class="token hvariable">bc</span> 8c <span class="token hvariable">e5</span> <span class="token hvariable">b8</span> <span class="token hvariable">a6</span> <span class="token hvariable">e7</span> <span class="token hvariable">bb</span> <span class="token number">99</span> <span class="token hvariable">e4</span> <span class="token hvariable">bd</span> <span class="token hvariable">a0</span> <span class="token hvariable">e4</span> <span class="token hvariable">b8</span> 8d <span class="token hvariable">e4</span> <span class="token hvariable">b8</span> <span class="token number">80</span> <span class="token hvariable">e6</span> <span class="token hvariable">a0</span> <span class="token hvariable">b7</span> <span class="token hvariable">e7</span> 9a <span class="token number">84</span> <span class="token hvariable">e6</span> <span class="token hvariable">b8</span> <span class="token hvariable">b8</span> <span class="token hvariable">e6</span> <span class="token number">88</span> 8f <span class="token hvariable">e4</span> <span class="token hvariable">bd</span> <span class="token number">93</span> <span class="token hvariable">e9</span> <span class="token hvariable">aa</span> 8c <span class="token hvariable">ef</span> <span class="token hvariable">bc</span> 9b <span class="token hvariable">e8</span> <span class="token hvariable">be</span> <span class="token number">85</span> <span class="token hvariable">e5</span> 8a <span class="token hvariable">a9</span> <span class="token hvariable">e7</span> <span class="token hvariable">be</span> <span class="token hvariable">a4</span> <span class="token hvariable">e5</span> 8f <span class="token hvariable">b7</span> <span class="token hvariable">ef</span> <span class="token hvariable">bc</span> 9a <span class="token number">33</span> <span class="token number">33</span> <span class="token number">38</span> <span class="token number">39</span> <span class="token number">38</span> <span class="token number">39</span> <span class="token number">32</span> <span class="token number">37</span> <span class="token number">33</span>
+
+完整
+<span class="token constant">E4</span> <span class="token constant">B8</span> <span class="token constant">A5</span> <span class="token constant">E7</span> <span class="token constant">A6</span> <span class="token number">81</span> <span class="token constant">E5</span> <span class="token number">88</span> <span class="token constant">B6</span> <span class="token constant">E4</span> <span class="token constant">BD</span> 9C <span class="token constant">E8</span> <span class="token number">89</span> <span class="token constant">B2</span> <span class="token constant">E6</span> <span class="token number">83</span> <span class="token number">85</span> <span class="token constant">E3</span> <span class="token number">80</span> <span class="token number">81</span> <span class="token constant">E6</span> <span class="token number">94</span> <span class="token constant">BF</span> <span class="token constant">E6</span> <span class="token constant">B2</span> <span class="token constant">BB</span> <span class="token constant">E3</span> <span class="token number">80</span> <span class="token number">81</span> <span class="token constant">E6</span> 9A <span class="token constant">B4</span> <span class="token constant">E5</span> 8A 9B <span class="token constant">E7</span> <span class="token constant">AD</span> <span class="token number">89</span> <span class="token constant">E5</span> <span class="token number">86</span> <span class="token number">85</span> <span class="token constant">E5</span> <span class="token constant">AE</span> <span class="token constant">B9</span> <span class="token constant">EF</span> <span class="token constant">BC</span> 8C <span class="token constant">E8</span> <span class="token constant">BF</span> 9D <span class="token constant">E8</span> <span class="token number">80</span> <span class="token number">85</span> <span class="token constant">E5</span> <span class="token constant">B0</span> <span class="token number">86</span> <span class="token constant">E4</span> <span class="token constant">BE</span> 9D <span class="token constant">E6</span> <span class="token constant">B3</span> <span class="token number">95</span> <span class="token constant">E8</span> <span class="token constant">BF</span> <span class="token constant">BD</span> <span class="token constant">E7</span> <span class="token constant">A9</span> <span class="token constant">B6</span> <span class="token constant">E6</span> <span class="token constant">B3</span> <span class="token number">95</span> <span class="token constant">E5</span> <span class="token constant">BE</span> 8B <span class="token constant">E8</span> <span class="token constant">B4</span> <span class="token constant">A3</span> <span class="token constant">E4</span> <span class="token constant">BB</span> <span class="token constant">BB</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">00</span> <span class="token number">28</span> <span class="token number">54</span> 9D <span class="token number">57</span> <span class="token number">00</span> <span class="token number">33</span> <span class="token number">00</span> 8F <span class="token constant">E7</span> <span class="token constant">BC</span> <span class="token constant">BA</span> <span class="token constant">E5</span> <span class="token constant">B0</span> <span class="token number">91</span>
+
+迷你队长提示
+原
+<span class="token number">24</span> <span class="token constant">CA</span> <span class="token constant">BE</span> <span class="token number">06</span> <span class="token constant">E9</span> 7C <span class="token number">20</span> <span class="token number">09</span> <span class="token constant">E8</span> <span class="token constant">BF</span> <span class="token constant">B7</span> <span class="token constant">E4</span> <span class="token constant">BD</span> <span class="token constant">A0</span> <span class="token constant">E9</span> <span class="token number">98</span> 9F <span class="token constant">E9</span> <span class="token number">95</span> <span class="token constant">BF</span> <span class="token constant">E6</span> <span class="token constant">B8</span> <span class="token constant">A9</span> <span class="token constant">E9</span> <span class="token constant">A6</span> <span class="token constant">A8</span> <span class="token constant">E6</span> 8F <span class="token number">90</span> <span class="token constant">E7</span> <span class="token constant">A4</span> <span class="token constant">BA</span> <span class="token constant">EF</span> <span class="token constant">BC</span> 9A
+
+<span class="token hvariable">e6</span> <span class="token hvariable">bd</span> <span class="token number">87</span> <span class="token hvariable">e6</span> <span class="token hvariable">b7</span> <span class="token hvariable">bc</span> <span class="token hvariable">e8</span> <span class="token hvariable">bf</span> <span class="token hvariable">b7</span> <span class="token hvariable">e4</span> <span class="token hvariable">bd</span> <span class="token hvariable">a0</span> <span class="token hvariable">e8</span> <span class="token hvariable">be</span> <span class="token number">85</span> <span class="token hvariable">e5</span> 8a <span class="token hvariable">a9</span> <span class="token number">54</span> <span class="token number">69</span> <span class="token number">70</span> <span class="token number">73</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Blog/guide.html" class="prev">
+        开发者脚本如何使用
+      </a></span> <span class="next"><a href="/Lua/2048.html">
+        Game 2048
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.ef735673.js" defer></script><script src="/assets/js/2.b51029ec.js" defer></script><script src="/assets/js/13.026b2d2d.js" defer></script>
+  </body>
+</html>

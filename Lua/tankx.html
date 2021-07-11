@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>坦克对战 | 潇淼文档</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bcbe8dcd550616b188183a023ba3e682";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <meta name="description" content="MiniDoc">
+    <meta name="robots" content="all">
+    <meta name="author" content="msk11@qq.com">
+    <meta name="copyright" content="Hcat">
+    <meta name="revisit-after" content="7 days">
+    <meta name="keywords" content="潇淼文档,潇淼,迷你世界,文档,迷你,mini,doc,世界,MiniWorld,脚本,教程">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.84203ac8.css" as="style"><link rel="preload" href="/assets/js/app.ef735673.js" as="script"><link rel="preload" href="/assets/js/2.b51029ec.js" as="script"><link rel="preload" href="/assets/js/44.d7674f0c.js" as="script"><link rel="prefetch" href="/assets/js/10.08f53c0a.js"><link rel="prefetch" href="/assets/js/11.852fe533.js"><link rel="prefetch" href="/assets/js/12.387441d1.js"><link rel="prefetch" href="/assets/js/13.026b2d2d.js"><link rel="prefetch" href="/assets/js/14.234e0442.js"><link rel="prefetch" href="/assets/js/15.05982601.js"><link rel="prefetch" href="/assets/js/16.6ddb7b54.js"><link rel="prefetch" href="/assets/js/17.c8e27348.js"><link rel="prefetch" href="/assets/js/18.bea8b7b8.js"><link rel="prefetch" href="/assets/js/19.8032166c.js"><link rel="prefetch" href="/assets/js/20.e8575946.js"><link rel="prefetch" href="/assets/js/21.78fb8e90.js"><link rel="prefetch" href="/assets/js/22.1d33cf5f.js"><link rel="prefetch" href="/assets/js/23.7b04bc71.js"><link rel="prefetch" href="/assets/js/24.e2b60efb.js"><link rel="prefetch" href="/assets/js/25.5d5a4485.js"><link rel="prefetch" href="/assets/js/26.8173389b.js"><link rel="prefetch" href="/assets/js/27.b71f4454.js"><link rel="prefetch" href="/assets/js/28.e1ca4b97.js"><link rel="prefetch" href="/assets/js/29.929be50a.js"><link rel="prefetch" href="/assets/js/3.df829fda.js"><link rel="prefetch" href="/assets/js/30.7e96e268.js"><link rel="prefetch" href="/assets/js/31.c0e69237.js"><link rel="prefetch" href="/assets/js/32.7a31538c.js"><link rel="prefetch" href="/assets/js/33.9f9fcbee.js"><link rel="prefetch" href="/assets/js/34.1a23bcc8.js"><link rel="prefetch" href="/assets/js/35.d646c169.js"><link rel="prefetch" href="/assets/js/36.23fde348.js"><link rel="prefetch" href="/assets/js/37.72568f5d.js"><link rel="prefetch" href="/assets/js/38.c16df410.js"><link rel="prefetch" href="/assets/js/39.beaf8a5b.js"><link rel="prefetch" href="/assets/js/4.af196e2c.js"><link rel="prefetch" href="/assets/js/40.a6c3be0f.js"><link rel="prefetch" href="/assets/js/41.55dcf4c0.js"><link rel="prefetch" href="/assets/js/42.194c1906.js"><link rel="prefetch" href="/assets/js/43.23218e8b.js"><link rel="prefetch" href="/assets/js/45.98b149c7.js"><link rel="prefetch" href="/assets/js/46.b5d5ec9d.js"><link rel="prefetch" href="/assets/js/47.b3a38716.js"><link rel="prefetch" href="/assets/js/48.ea0a7e3f.js"><link rel="prefetch" href="/assets/js/5.18feaa6c.js"><link rel="prefetch" href="/assets/js/6.7e6925c7.js"><link rel="prefetch" href="/assets/js/7.1b7a5d04.js"><link rel="prefetch" href="/assets/js/8.f363ac78.js"><link rel="prefetch" href="/assets/js/9.61f6ba62.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.84203ac8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">潇淼文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Hcat.html" class="nav-link">
+  联系我们
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="http://xor.hcat.work/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  XOR加密
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Hcat.html" class="nav-link">
+  联系我们
+</a></div><div class="nav-item"><a href="/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="http://xor.hcat.work/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  XOR加密
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">首页</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基本要素</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Lua脚本</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Lua/2048.html" class="sidebar-link">Game 2048</a></li><li><a href="/Lua/void.html" class="sidebar-link">不那么仁慈的虚空</a></li><li><a href="/Lua/zfdm.html" class="sidebar-link">争分夺秒</a></li><li><a href="/Lua/tankx.html" aria-current="page" class="active sidebar-link">坦克对战</a></li><li><a href="/Lua/Stone_code.html" class="sidebar-link">Stone Code</a></li><li><a href="/Lua/Gomoku.html" class="sidebar-link">五子棋（Gomoku）</a></li><li><a href="/Lua/fight_for_gold_bricks.html" class="sidebar-link">夺金之战（Fight for Gold Bricks）</a></li><li><a href="/Lua/example.html" class="sidebar-link">示例整合Examples collection</a></li><li><a href="/Lua/Mini_Fast_Food_Restaurant.html" class="sidebar-link">迷你快餐店（Mini Fast Food Restaurant）</a></li><li><a href="/Lua/color_fight.html" class="sidebar-link">好色之途（Color Fight）</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>拓展元素</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>商业化[圈钱]</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>游戏全局数据表</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="坦克对战"><a href="#坦克对战" class="header-anchor">#</a> 坦克对战</h1> <div class="language-lua extra-class"><pre class="language-lua"><code><span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">local</span> X<span class="token punctuation">,</span> Y<span class="token punctuation">,</span> Z <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span> <span class="token comment">--初始出生点</span>
+<span class="token keyword">local</span> Map_Wid<span class="token punctuation">,</span> Map_Len <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span> <span class="token comment">--地图横长/竖宽</span>
+
+<span class="token keyword">local</span> Players <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">--本地玩家Id</span>
+<span class="token keyword">local</span> PlayerPos <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">--复活点</span>
+<span class="token keyword">local</span> TmCityPos <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">--玩家城池</span>
+<span class="token keyword">local</span> TmCityIdx <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token comment">--城池方块ID</span>
+
+<span class="token keyword">local</span> tickCount <span class="token operator">=</span> <span class="token number">0</span>   <span class="token comment">--ticker计数</span>
+<span class="token keyword">local</span> newTicker <span class="token operator">=</span> <span class="token number">20</span>  <span class="token comment">--每10Tick刷新</span>
+<span class="token keyword">local</span> isGameEnded <span class="token operator">=</span> <span class="token keyword">false</span> <span class="token comment">--防止多次调用</span>
+<span class="token keyword">local</span> isGameStart <span class="token operator">=</span> <span class="token keyword">false</span> <span class="token comment">--游戏是否已开始</span>
+<span class="token keyword">local</span> isGRuleInit <span class="token operator">=</span> <span class="token keyword">false</span> <span class="token comment">--规则是否已设置</span>
+
+<span class="token keyword">local</span> bulletIdx <span class="token operator">=</span> <span class="token number">15003</span>
+<span class="token keyword">local</span> LoserIdx <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token comment">--失败队伍</span>
+<span class="token keyword">local</span> itemcTime <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">--随机计时</span>
+
+<span class="token comment">--武器类 408-&gt;冲锋枪 409-&gt;重机枪 410-&gt;狙击枪 450-&gt;子弹</span>
+<span class="token keyword">local</span> wpBlocks <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token number">408</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>idx<span class="token operator">=</span><span class="token number">15000</span><span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">409</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>idx<span class="token operator">=</span><span class="token number">15005</span><span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+				  <span class="token punctuation">[</span><span class="token number">450</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>idx<span class="token operator">=</span><span class="token number">15003</span><span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">64</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">410</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>idx<span class="token operator">=</span><span class="token number">15004</span><span class="token punctuation">,</span> num<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token keyword">local</span> bufItems <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">11023</span><span class="token punctuation">,</span> <span class="token number">11024</span><span class="token punctuation">,</span> <span class="token number">11025</span><span class="token punctuation">,</span> <span class="token number">11015</span><span class="token punctuation">}</span> <span class="token comment">--铁铲等Item</span>
+<span class="token keyword">local</span> itemObjIds <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">--道具ID</span>
+<span class="token keyword">local</span> wpBlockPos <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">--武器位置</span>
+
+<span class="token keyword">local</span> Teamx <span class="token operator">=</span> <span class="token punctuation">{</span>red<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> blue<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">}</span> <span class="token comment">--游戏队伍</span>
+<span class="token keyword">local</span> Gamex <span class="token operator">=</span> <span class="token punctuation">{</span>win<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> lose<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">}</span> <span class="token comment">--游戏结果</span>
+<span class="token keyword">local</span> CellType <span class="token operator">=</span> <span class="token punctuation">{</span>def<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> river<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> wall<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> point<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> city<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">}</span>   <span class="token comment">--地图元素</span>
+<span class="token keyword">local</span> TmEffects <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">[</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>glEffectId<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> lastTime <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">--雾圈效果</span>
+				   <span class="token punctuation">[</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>glEffectId<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> lastTime <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+<span class="token comment">-----------------地图相关-----------------</span>
+<span class="token keyword">local</span> datax_map <span class="token operator">=</span> <span class="token string">[[19,23,,,,,,,,,,,,
+*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*
+*,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,*
+*,c,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,c,*
+*,c,q,0,0,0,0,y,m,x,0,0,0,0,0,0,q,c,*
+*,c,q,0,0,0,r,x,x,x,r,0,0,0,0,0,q,c,*
+*,c,q,0,0,0,0,0,0,0,0,0,0,0,0,0,q,c,*
+*,c,q,0,0,0,0,0,0,0,u,u,u,u,u,u,q,c,*
+*,c,q,x,y,y,x,x,q,v,v,v,v,v,v,v,q,c,*
+*,c,q,0,0,0,0,w,w,w,w,w,w,w,w,w,q,c,*
+*,c,q,0,0,0,0,y,0,0,u,y,u,u,u,0,q,c,*
+*,c,q,0,y,0,y,0,0,y,0,0,y,0,0,0,q,c,*
+*,c,q,0,0,0,q,y,0,0,0,y,q,0,0,0,q,c,*
+*,c,q,0,0,0,y,0,0,y,0,0,y,0,y,0,q,c,*
+*,c,q,0,u,u,u,y,u,0,0,y,0,0,0,0,q,c,*
+*,c,q,w,w,w,w,w,w,w,w,w,0,0,0,0,q,c,*
+*,c,q,v,v,v,v,v,v,v,q,x,x,y,y,x,q,c,*
+*,c,q,u,u,u,u,u,u,0,0,0,0,0,0,0,q,c,*
+*,c,q,0,0,0,0,0,0,0,0,0,0,0,0,0,q,c,*
+*,c,q,0,0,0,0,0,b,x,x,x,b,0,0,0,q,c,*
+*,c,q,0,0,0,0,0,0,x,m,y,0,0,0,0,q,c,*
+*,c,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,c,*
+*,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,c,*
+*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*]]</span>
+
+<span class="token keyword">function</span> <span class="token function">GetCellIdx</span><span class="token punctuation">(</span>ccType<span class="token punctuation">)</span>
+	<span class="token keyword">local</span> cellIdx <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token comment">--默认不绘制</span>
+
+	<span class="token keyword">if</span> ccType <span class="token operator">==</span> <span class="token string">&quot;q&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">1</span>   	<span class="token comment">--基石-外墙</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;c&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">8</span>   <span class="token comment">--地砖-外墙</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;*&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">678</span> <span class="token comment">--蓝砖-外墙</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;r&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">991</span> <span class="token comment">--红队重生点</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;b&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">992</span> <span class="token comment">--蓝队重生点</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;u&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">218</span> <span class="token comment">--果木叶</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;v&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">221</span> <span class="token comment">--红杉树叶</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;x&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">502</span> <span class="token comment">--石砖</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;y&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">101</span> <span class="token comment">--土砖</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;m&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">254</span> <span class="token comment">--桃树</span>
+	<span class="token keyword">elseif</span> ccType <span class="token operator">==</span> <span class="token string">&quot;w&quot;</span> <span class="token keyword">then</span> cellIdx <span class="token operator">=</span> <span class="token number">3</span> <span class="token keyword">end</span><span class="token comment">--河流</span>
+
+	<span class="token keyword">return</span> cellIdx
+<span class="token keyword">end</span>
+TmCityIdx <span class="token operator">=</span> <span class="token function">GetCellIdx</span><span class="token punctuation">(</span><span class="token string">'m'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">InitMapData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">local</span> MapData <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">--地图数据</span>
+
+	MapData<span class="token punctuation">[</span><span class="token string">'offset_x'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span>
+	MapData<span class="token punctuation">[</span><span class="token string">'offset_z'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span>
+
+	<span class="token keyword">local</span> datax <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token keyword">local</span> listm <span class="token operator">=</span> string<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>datax_map<span class="token punctuation">,</span> <span class="token string">&quot;\n&quot;</span><span class="token punctuation">)</span>
+	<span class="token keyword">for</span> idx<span class="token punctuation">,</span> line <span class="token keyword">in</span> <span class="token function">pairs</span><span class="token punctuation">(</span>listm<span class="token punctuation">)</span> <span class="token keyword">do</span>
+		<span class="token keyword">if</span> idx <span class="token operator">==</span> <span class="token number">1</span> <span class="token keyword">then</span> <span class="token comment">--第一行获取地图宽高</span>
+			<span class="token keyword">local</span> iter <span class="token operator">=</span> string<span class="token punctuation">.</span><span class="token function">gmatch</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span> <span class="token string">&quot;(%d+),&quot;</span><span class="token punctuation">)</span>
+			MapData<span class="token punctuation">[</span><span class="token string">'width'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">iter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+			MapData<span class="token punctuation">[</span><span class="token string">'height'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">iter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">else</span> <span class="token comment">--获取地图数据</span>
+			datax<span class="token punctuation">[</span>idx<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> string<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>line<span class="token punctuation">,</span> <span class="token string">&quot;,&quot;</span><span class="token punctuation">)</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+	<span class="token comment">-- 设置地图data数据</span>
+	MapData<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span> <span class="token operator">=</span> datax
+
+	<span class="token keyword">return</span> MapData
+<span class="token keyword">end</span>
+<span class="token comment">-----------------工具类函数-----------------</span>
+<span class="token comment">-- 分割字符串</span>
+<span class="token keyword">function</span> string<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> mark<span class="token punctuation">)</span>
+ 	<span class="token keyword">if</span> string<span class="token punctuation">.</span><span class="token function">len</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">nil</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> sIdx<span class="token punctuation">,</span> tsub <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token keyword">while</span> <span class="token keyword">true</span> <span class="token keyword">do</span> <span class="token comment">--遍历截取字符串</span>
+		<span class="token keyword">local</span> pos <span class="token operator">=</span> string<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> mark<span class="token punctuation">,</span> sIdx<span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span>
+	   	<span class="token keyword">if</span> <span class="token keyword">not</span> pos <span class="token keyword">then</span> <span class="token keyword">break</span> <span class="token keyword">end</span>
+
+	    table<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>tsub<span class="token punctuation">,</span> string<span class="token punctuation">.</span><span class="token function">sub</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> sIdx<span class="token punctuation">,</span> pos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	    sIdx <span class="token operator">=</span> pos <span class="token operator">+</span> string<span class="token punctuation">.</span><span class="token function">len</span><span class="token punctuation">(</span>mark<span class="token punctuation">)</span>
+	<span class="token keyword">end</span>
+  	table<span class="token punctuation">.</span><span class="token function">insert</span> <span class="token punctuation">(</span>tsub<span class="token punctuation">,</span> string<span class="token punctuation">.</span><span class="token function">sub</span><span class="token punctuation">(</span>str<span class="token punctuation">,</span> sIdx<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">return</span> tsub
+<span class="token keyword">end</span>
+<span class="token comment">-- 获取字典的keys</span>
+<span class="token keyword">function</span> table<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>tab<span class="token punctuation">)</span>
+    <span class="token keyword">local</span> keys <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">for</span> key<span class="token punctuation">,</span> val <span class="token keyword">in</span> <span class="token function">pairs</span><span class="token punctuation">(</span>tab<span class="token punctuation">)</span> <span class="token keyword">do</span>
+        keys<span class="token punctuation">[</span><span class="token operator">#</span>keys<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> key
+    <span class="token keyword">end</span>
+    <span class="token keyword">return</span> keys
+<span class="token keyword">end</span>
+
+<span class="token comment">-----------------自定义函数-----------------</span>
+<span class="token keyword">function</span> <span class="token function">InitCenterPoint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">local</span> ret <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>
+	<span class="token comment">-- 获取出生点,并以此设置地图中心</span>
+	ret<span class="token punctuation">,</span> X<span class="token punctuation">,</span> Y<span class="token punctuation">,</span> Z <span class="token operator">=</span> Spawnport<span class="token punctuation">:</span><span class="token function">getSpawnPoint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+	<span class="token comment">--地平面的y轴坐标为8</span>
+	<span class="token keyword">if</span> Y<span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> Y <span class="token operator">=</span> <span class="token number">6</span> <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> <span class="token function">InitColorBlock</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">local</span> blockIdx <span class="token operator">=</span> <span class="token number">737</span><span class="token comment">--简易罐子/方块碰撞</span>
+	Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> blockIdx<span class="token punctuation">)</span>
+	<span class="token comment">--408, 409, 450--</span>
+	<span class="token keyword">local</span> blocks <span class="token operator">=</span> table<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>wpBlocks<span class="token punctuation">)</span>
+	Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> blocks<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+	Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> blocks<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+	Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> blocks<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+	Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1037</span><span class="token punctuation">)</span>
+	Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">1038</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> <span class="token keyword">true</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> xPos <span class="token operator">=</span> <span class="token number">1</span>
+	<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">667</span><span class="token punctuation">,</span> <span class="token number">682</span> <span class="token keyword">do</span>
+		xPos <span class="token operator">=</span> xPos <span class="token operator">+</span> <span class="token number">1</span>
+		<span class="token keyword">local</span> zPos <span class="token operator">=</span> <span class="token number">1</span>
+		<span class="token keyword">for</span> data <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">15</span> <span class="token keyword">do</span>
+			zPos <span class="token operator">=</span> zPos <span class="token operator">+</span> <span class="token number">1</span>
+			Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> idx<span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> <span class="token function">InitGameMaps</span><span class="token punctuation">(</span><span class="token punctuation">...</span><span class="token punctuation">)</span>
+	<span class="token keyword">local</span> data_map <span class="token operator">=</span> <span class="token function">InitMapData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> data_map<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> step <span class="token operator">=</span> <span class="token number">1</span>
+	<span class="token keyword">local</span> floorIds <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">421</span><span class="token punctuation">,</span> <span class="token number">425</span><span class="token punctuation">}</span>
+	<span class="token keyword">local</span> ccdata <span class="token operator">=</span> data_map<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span>
+	Map_Wid <span class="token operator">=</span> <span class="token function">tonumber</span><span class="token punctuation">(</span>data_map<span class="token punctuation">[</span><span class="token string">'width'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+	Map_Len <span class="token operator">=</span> <span class="token function">tonumber</span><span class="token punctuation">(</span>data_map<span class="token punctuation">[</span><span class="token string">'height'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+	<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> Map_Len <span class="token keyword">do</span>
+		<span class="token keyword">local</span> xPos <span class="token operator">=</span> X<span class="token operator">+</span><span class="token punctuation">(</span>idx<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span>
+		step <span class="token operator">=</span> step <span class="token operator">+</span> <span class="token number">2</span>
+		<span class="token keyword">for</span> jdx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> Map_Wid <span class="token keyword">do</span>
+			<span class="token keyword">local</span> zPos <span class="token operator">=</span> Z<span class="token operator">+</span><span class="token punctuation">(</span>jdx<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span>
+
+			step <span class="token operator">=</span> step <span class="token operator">+</span> <span class="token number">1</span> <span class="token comment">--地板</span>
+			mod <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>step<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+			<span class="token keyword">local</span> floorId <span class="token operator">=</span> floorIds<span class="token punctuation">[</span>mod<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+			<span class="token keyword">local</span> ccType <span class="token operator">=</span> ccdata<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">[</span>jdx<span class="token punctuation">]</span>
+			<span class="token keyword">local</span> cellIdx <span class="token operator">=</span> <span class="token function">GetCellIdx</span><span class="token punctuation">(</span>ccType<span class="token punctuation">)</span>
+
+			<span class="token keyword">local</span> cellType <span class="token operator">=</span> CellType<span class="token punctuation">.</span>def
+			<span class="token keyword">if</span> ccType<span class="token operator">==</span><span class="token string">'w'</span> <span class="token keyword">then</span> cellType <span class="token operator">=</span> CellType<span class="token punctuation">.</span>river <span class="token keyword">end</span> <span class="token comment">--河流/覆盖空气墙</span>
+			<span class="token keyword">if</span> ccType<span class="token operator">==</span><span class="token string">'*'</span> <span class="token keyword">then</span> cellType <span class="token operator">=</span> CellType<span class="token punctuation">.</span>wall <span class="token keyword">end</span> <span class="token comment">--围墙/覆盖空气墙</span>
+			<span class="token keyword">if</span> ccType<span class="token operator">==</span><span class="token string">'r'</span> <span class="token keyword">or</span> ccType<span class="token operator">==</span><span class="token string">'b'</span> <span class="token keyword">then</span> cellType <span class="token operator">=</span> CellType<span class="token punctuation">.</span>point <span class="token keyword">end</span> <span class="token comment">--复活点</span>
+			<span class="token keyword">if</span> ccType<span class="token operator">==</span><span class="token string">'m'</span> <span class="token keyword">then</span> cellType <span class="token operator">=</span> CellType<span class="token punctuation">.</span>city <span class="token keyword">end</span> <span class="token comment">--城池/被摧毁后失败</span>
+
+			<span class="token keyword">if</span> cellType<span class="token operator">~=</span>CellType<span class="token punctuation">.</span>city <span class="token keyword">then</span>
+				<span class="token function">InitMapCell</span><span class="token punctuation">(</span>cellIdx<span class="token punctuation">,</span> xPos<span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> floorId<span class="token punctuation">,</span> cellType<span class="token punctuation">)</span>
+			<span class="token keyword">else</span> <span class="token comment">--需要保护的城池</span>
+				<span class="token function">drawBigTree</span><span class="token punctuation">(</span>cellIdx<span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> xPos<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> zPos<span class="token punctuation">)</span>
+				TmCityPos<span class="token punctuation">[</span><span class="token operator">#</span>TmCityPos<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>xPos<span class="token operator">=</span>xPos<span class="token punctuation">,</span> zPos<span class="token operator">=</span>zPos<span class="token punctuation">}</span>
+				<span class="token keyword">if</span> <span class="token keyword">not</span> TmEffects<span class="token punctuation">[</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">]</span><span class="token punctuation">.</span>xPos <span class="token keyword">then</span>
+					TmEffects<span class="token punctuation">[</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">]</span><span class="token punctuation">.</span>xPos <span class="token operator">=</span> xPos
+					TmEffects<span class="token punctuation">[</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">]</span><span class="token punctuation">.</span>zPos <span class="token operator">=</span> zPos
+				<span class="token keyword">else</span>
+					TmEffects<span class="token punctuation">[</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">]</span><span class="token punctuation">.</span>xPos <span class="token operator">=</span> xPos
+					TmEffects<span class="token punctuation">[</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">]</span><span class="token punctuation">.</span>zPos <span class="token operator">=</span> zPos
+				<span class="token keyword">end</span>
+			<span class="token keyword">end</span>
+
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> <span class="token function">InitMapCell</span><span class="token punctuation">(</span>cellId<span class="token punctuation">,</span> cxPos<span class="token punctuation">,</span> czPos<span class="token punctuation">,</span> floorId<span class="token punctuation">,</span> cellType<span class="token punctuation">)</span>
+	<span class="token comment">-- 绘制地板红砖</span>
+	<span class="token keyword">for</span> xPos <span class="token operator">=</span> cxPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> cxPos <span class="token keyword">do</span>
+		<span class="token keyword">for</span> zPos <span class="token operator">=</span> czPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> czPos <span class="token keyword">do</span>
+			Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> Y<span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> floorId<span class="token punctuation">)</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+	<span class="token keyword">if</span> cellId <span class="token operator">&lt;=</span> <span class="token number">0</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+	<span class="token comment">-- 绘制红蓝双方复活点</span>
+	<span class="token keyword">if</span> cellType<span class="token operator">==</span>CellType<span class="token punctuation">.</span>point <span class="token keyword">then</span>
+		<span class="token comment">--设置靠原点的</span>
+		<span class="token keyword">if</span> czPos <span class="token operator">&lt;</span> Map_Wid <span class="token keyword">then</span> czPos <span class="token operator">=</span> czPos<span class="token operator">+</span><span class="token number">1</span> <span class="token keyword">end</span>
+		<span class="token keyword">local</span> playPos <span class="token operator">=</span> <span class="token punctuation">{</span>x<span class="token operator">=</span>cxPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> y<span class="token operator">=</span>Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> z<span class="token operator">=</span>czPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span>
+		Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span>playPos<span class="token punctuation">.</span>x<span class="token punctuation">,</span> playPos<span class="token punctuation">.</span>y<span class="token punctuation">,</span> playPos<span class="token punctuation">.</span>z<span class="token punctuation">,</span> cellId<span class="token punctuation">)</span>
+		PlayerPos<span class="token punctuation">[</span><span class="token operator">#</span>PlayerPos<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> playPos
+		<span class="token keyword">return</span>
+	<span class="token keyword">end</span>
+
+	<span class="token comment">-- 绘制地面建筑/河流</span>
+	<span class="token keyword">local</span> cyPos <span class="token operator">=</span> cellType<span class="token operator">==</span>CellType<span class="token punctuation">.</span>river <span class="token keyword">and</span> Y<span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">or</span> Y<span class="token operator">+</span><span class="token number">1</span>
+	<span class="token keyword">for</span> yPos <span class="token operator">=</span> cyPos<span class="token punctuation">,</span> cyPos<span class="token operator">+</span><span class="token number">1</span> <span class="token keyword">do</span>
+		<span class="token keyword">for</span> xPos <span class="token operator">=</span> cxPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> cxPos <span class="token keyword">do</span>
+			<span class="token keyword">for</span> zPos <span class="token operator">=</span> czPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> czPos <span class="token keyword">do</span>
+				Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> yPos<span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> cellId<span class="token punctuation">)</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+
+	<span class="token comment">-- 给建筑覆盖空气墙</span>
+	<span class="token keyword">if</span> cellType<span class="token operator">==</span>CellType<span class="token punctuation">.</span>river <span class="token keyword">or</span> cellType<span class="token operator">==</span>CellType<span class="token punctuation">.</span>wall <span class="token keyword">then</span>
+		<span class="token keyword">local</span> cyPos <span class="token operator">=</span> cellType<span class="token operator">==</span><span class="token number">2</span> <span class="token keyword">and</span> Y<span class="token operator">+</span><span class="token number">1</span> <span class="token keyword">or</span> Y<span class="token operator">+</span><span class="token number">3</span>
+		<span class="token keyword">local</span> blkIdx <span class="token operator">=</span> cellType<span class="token operator">==</span><span class="token number">2</span> <span class="token keyword">and</span> <span class="token number">1018</span> <span class="token keyword">or</span> <span class="token number">1001</span>
+		<span class="token keyword">for</span> yPos <span class="token operator">=</span> cyPos<span class="token punctuation">,</span> cyPos<span class="token operator">+</span><span class="token number">1</span> <span class="token keyword">do</span> <span class="token comment">--覆盖空气墙</span>
+			<span class="token keyword">for</span> xPos <span class="token operator">=</span> cxPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> cxPos <span class="token keyword">do</span>
+				<span class="token keyword">for</span> zPos <span class="token operator">=</span> czPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> czPos <span class="token keyword">do</span>
+					Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> yPos<span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> blkIdx<span class="token punctuation">)</span>
+				<span class="token keyword">end</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> <span class="token function">drawBigTree</span><span class="token punctuation">(</span>trunkId<span class="token punctuation">,</span> leafId<span class="token punctuation">,</span> cx<span class="token punctuation">,</span> cy<span class="token punctuation">,</span> cz<span class="token punctuation">)</span>
+
+	<span class="token keyword">local</span> direct <span class="token operator">=</span> <span class="token number">4</span>
+	<span class="token keyword">local</span> tyPos <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">--设置树干</span>
+	<span class="token keyword">local</span> txP1<span class="token punctuation">,</span> txP2 <span class="token operator">=</span> X<span class="token operator">+</span>cx<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> X<span class="token operator">+</span>cx
+	<span class="token keyword">local</span> tzP1<span class="token punctuation">,</span> tzP2 <span class="token operator">=</span> Z<span class="token operator">+</span>cz<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> Z<span class="token operator">+</span>cz
+
+	<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span> <span class="token keyword">do</span><span class="token comment">--树高</span>
+		tyPos <span class="token operator">=</span> Y <span class="token operator">+</span> cy <span class="token operator">+</span> idx
+		<span class="token keyword">for</span> xPos <span class="token operator">=</span> txP1<span class="token punctuation">,</span> txP2 <span class="token keyword">do</span>
+			<span class="token keyword">for</span> zPos <span class="token operator">=</span> tzP1<span class="token punctuation">,</span> tzP2 <span class="token keyword">do</span>
+				Block<span class="token punctuation">:</span><span class="token function">placeBlock</span><span class="token punctuation">(</span>trunkId<span class="token punctuation">,</span> xPos<span class="token punctuation">,</span> tyPos<span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> direct<span class="token punctuation">)</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+
+	<span class="token comment">--设置树叶/N层树叶</span>
+	<span class="token keyword">for</span> level <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">do</span>
+		direct <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">--第N层树叶</span>
+		<span class="token keyword">local</span> yPos <span class="token operator">=</span> tyPos<span class="token operator">+</span><span class="token number">1</span><span class="token operator">-</span>level
+		<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> level <span class="token keyword">do</span> <span class="token comment">--每层树叶圈</span>
+			<span class="token keyword">for</span> xPos <span class="token operator">=</span> txP1<span class="token operator">-</span>idx<span class="token punctuation">,</span> txP2<span class="token operator">+</span>idx <span class="token keyword">do</span>
+				<span class="token keyword">for</span> zPos <span class="token operator">=</span> tzP1<span class="token operator">-</span>idx<span class="token punctuation">,</span> tzP2<span class="token operator">+</span>idx <span class="token keyword">do</span>
+					<span class="token keyword">local</span> isXInTrunk <span class="token operator">=</span> xPos<span class="token operator">&gt;</span>txP1 <span class="token keyword">and</span> xPos<span class="token operator">&lt;</span>txP2
+					<span class="token keyword">local</span> isYInTrunk <span class="token operator">=</span> zPos<span class="token operator">&gt;</span>tzP1 <span class="token keyword">and</span> zPos<span class="token operator">&lt;</span>tzP2
+					<span class="token keyword">if</span> <span class="token keyword">not</span> <span class="token punctuation">(</span>isXInTrunk <span class="token keyword">and</span> isXInTrunk<span class="token punctuation">)</span> <span class="token keyword">then</span>
+						Block<span class="token punctuation">:</span><span class="token function">placeBlock</span><span class="token punctuation">(</span>leafId<span class="token punctuation">,</span> xPos<span class="token punctuation">,</span> yPos<span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> direct<span class="token punctuation">)</span>
+					<span class="token keyword">end</span>
+				<span class="token keyword">end</span>
+				direct <span class="token operator">=</span> direct <span class="token operator">+</span> <span class="token number">2</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span>
+
+		<span class="token keyword">if</span> level <span class="token operator">&lt;=</span> <span class="token number">0</span> <span class="token keyword">then</span> <span class="token comment">--上层树叶</span>
+			<span class="token keyword">for</span> xPos <span class="token operator">=</span> txP1<span class="token operator">-</span>level<span class="token punctuation">,</span> txP2<span class="token operator">+</span>level <span class="token keyword">do</span>
+				<span class="token keyword">for</span> zPos <span class="token operator">=</span> tzP1<span class="token operator">-</span>level<span class="token punctuation">,</span> tzP2<span class="token operator">+</span>level <span class="token keyword">do</span>
+					Block<span class="token punctuation">:</span><span class="token function">placeBlock</span><span class="token punctuation">(</span>leafId<span class="token punctuation">,</span> xPos<span class="token punctuation">,</span> yPos<span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> direct<span class="token punctuation">)</span>
+				<span class="token keyword">end</span>
+				direct <span class="token operator">=</span> direct <span class="token operator">+</span> <span class="token number">2</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> <span class="token function">InitPlayerData</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> isGameStart <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+	<span class="token comment">--清空背包</span>
+	<span class="token comment">--Backpack:clearPack(playerId)</span>
+
+	<span class="token comment">--初始化武器类型</span>
+	<span class="token keyword">local</span> itemId<span class="token punctuation">,</span> itemCnt <span class="token operator">=</span> <span class="token number">15004</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token comment">--狙击枪</span>
+	Player<span class="token punctuation">:</span><span class="token function">gainItems</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> itemId<span class="token punctuation">,</span> itemCnt<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+	<span class="token keyword">local</span> itemId<span class="token punctuation">,</span> itemCnt <span class="token operator">=</span> <span class="token number">15002</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token comment">--左轮枪</span>
+	Player<span class="token punctuation">:</span><span class="token function">gainItems</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> itemId<span class="token punctuation">,</span> itemCnt<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+	<span class="token keyword">local</span> itemId<span class="token punctuation">,</span> itemCnt <span class="token operator">=</span> <span class="token number">15003</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token operator">*</span><span class="token number">3</span><span class="token comment">--64发子弹</span>
+	Player<span class="token punctuation">:</span><span class="token function">gainItems</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> itemId<span class="token punctuation">,</span> itemCnt<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+	<span class="token comment">-- local itemId, itemCnt = 15002, 1</span>
+	<span class="token comment">-- Player:gainItems(playerId, itemId, itemCnt, 1)</span>
+	<span class="token comment">-- local itemId, itemCnt = 15004, 1</span>
+	<span class="token comment">-- Player:gainItems(playerId, itemId, itemCnt, 1)</span>
+	<span class="token comment">-- local itemId, itemCnt = 15005, 1</span>
+	<span class="token comment">-- Player:gainItems(playerId, itemId, itemCnt, 1)</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> <span class="token function">InitGameRule</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	isGRuleInit <span class="token operator">=</span> <span class="token keyword">true</span>
+	GameRule<span class="token punctuation">.</span>EndTime <span class="token operator">=</span> <span class="token number">6</span>  		 <span class="token comment">--游戏时长</span>
+	GameRule<span class="token punctuation">.</span>TeamNum <span class="token operator">=</span> <span class="token number">2</span>         <span class="token comment">--队伍数量</span>
+	GameRule<span class="token punctuation">.</span>TimeLocked <span class="token operator">=</span> <span class="token number">1</span>  	 <span class="token comment">--当前时间</span>
+	GameRule<span class="token punctuation">.</span>MaxPlayers <span class="token operator">=</span> <span class="token number">4</span>      <span class="token comment">--最大玩家量</span>
+	GameRule<span class="token punctuation">.</span>CameraDir <span class="token operator">=</span> <span class="token number">1</span>       <span class="token comment">--缺省正视角:1</span>
+	GameRule<span class="token punctuation">.</span>StartMode <span class="token operator">=</span> <span class="token number">0</span>       <span class="token comment">--开启模式 0:主开</span>
+	GameRule<span class="token punctuation">.</span>StartPlayers <span class="token operator">=</span> <span class="token number">1</span>    <span class="token comment">--最低玩家量 2人</span>
+	GameRule<span class="token punctuation">.</span>PlayerDieDrops <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment">--死亡掉落 1:true</span>
+	GameRule<span class="token punctuation">.</span>DisplayScore <span class="token operator">=</span> <span class="token number">1</span>    <span class="token comment">--显示比分 1:true</span>
+	GameRule<span class="token punctuation">.</span>AllowMidwayJoin <span class="token operator">=</span> <span class="token number">1</span> <span class="token comment">--中途加入 1:允许</span>
+	GameRule<span class="token punctuation">.</span>ScoreKillPlayer <span class="token operator">=</span> <span class="token number">1</span> <span class="token comment">--击杀玩家 得1分</span>
+	GameRule<span class="token punctuation">.</span>BlockDestroy <span class="token operator">=</span> <span class="token number">1</span>    <span class="token comment">--方块可被摧毁 1:true</span>
+	GameRule<span class="token punctuation">.</span>WinLoseEndTime <span class="token operator">=</span> <span class="token number">1</span>  <span class="token comment">--游戏超时结束则全胜</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">--重置tick次数</span>
+<span class="token keyword">function</span> <span class="token function">IsCanTick</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	tickCount <span class="token operator">=</span> tickCount<span class="token operator">+</span><span class="token number">1</span>
+
+	<span class="token keyword">if</span> tickCount<span class="token operator">&gt;=</span>newTicker <span class="token keyword">then</span>
+		tickCount <span class="token operator">=</span> <span class="token number">0</span>
+		<span class="token keyword">return</span> <span class="token keyword">true</span>
+	<span class="token keyword">end</span>
+
+	<span class="token keyword">return</span> <span class="token keyword">false</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">--获取可放置方块的位置</span>
+<span class="token keyword">function</span> <span class="token function">GetPositionX</span><span class="token punctuation">(</span>x1<span class="token punctuation">,</span>x2<span class="token punctuation">,</span>z1<span class="token punctuation">,</span>z2<span class="token punctuation">)</span>
+	x1 <span class="token operator">=</span> x1 <span class="token keyword">or</span> <span class="token number">3</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span>
+	z1 <span class="token operator">=</span> z1 <span class="token keyword">or</span> <span class="token number">3</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">+</span><span class="token number">1</span>
+	x2 <span class="token operator">=</span> x2 <span class="token keyword">or</span> <span class="token punctuation">(</span>Map_Len<span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span>
+	z2 <span class="token operator">=</span> z2 <span class="token keyword">or</span> <span class="token punctuation">(</span>Map_Wid<span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span>
+
+	<span class="token keyword">local</span> count <span class="token operator">=</span> <span class="token number">1</span>
+	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> blkId <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
+	<span class="token keyword">local</span> xPos<span class="token punctuation">,</span> zPos <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span>
+	<span class="token keyword">while</span> <span class="token keyword">true</span> <span class="token keyword">do</span>
+		count <span class="token operator">=</span> count <span class="token operator">+</span> <span class="token number">1</span>
+
+		xPos <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span>
+		zPos <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span>z1<span class="token punctuation">,</span> z2<span class="token punctuation">)</span>
+
+		ret<span class="token punctuation">,</span> blkId <span class="token operator">=</span> Block<span class="token punctuation">:</span><span class="token function">getBlockID</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> zPos<span class="token punctuation">)</span>
+		<span class="token keyword">if</span> ret<span class="token operator">==</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">and</span> blkId<span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token keyword">break</span> <span class="token keyword">end</span>
+
+		<span class="token keyword">if</span> count<span class="token operator">&gt;</span><span class="token number">99</span> <span class="token keyword">then</span> <span class="token comment">--防止死循环</span>
+			<span class="token function">print</span><span class="token punctuation">(</span><span class="token string">&quot;Get Pos Error===&gt;&gt;&gt;&quot;</span><span class="token punctuation">)</span>
+			<span class="token keyword">return</span> <span class="token keyword">nil</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+	<span class="token keyword">return</span> xPos<span class="token punctuation">,</span> zPos
+<span class="token keyword">end</span>
+
+<span class="token comment">--设置玩家位置</span>
+<span class="token keyword">function</span> <span class="token function">SetPositionPx</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> isGameStart <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> playerId <span class="token keyword">or</span> playerId<span class="token operator">&lt;=</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> teamId <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getTeam</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> ret <span class="token operator">~=</span> ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> index <span class="token operator">=</span> <span class="token number">1</span>
+	<span class="token keyword">for</span> idx<span class="token punctuation">,</span> val <span class="token keyword">in</span> <span class="token function">pairs</span><span class="token punctuation">(</span>Players<span class="token punctuation">)</span> <span class="token keyword">do</span>
+		<span class="token keyword">if</span> val<span class="token operator">==</span>playerId <span class="token keyword">then</span> index<span class="token operator">=</span>idx <span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+	<span class="token keyword">local</span> teamTdx <span class="token operator">=</span> teamId<span class="token operator">==</span>Teamx<span class="token punctuation">.</span>red <span class="token keyword">and</span> <span class="token number">0</span> <span class="token keyword">or</span> <span class="token number">1</span>
+	<span class="token keyword">local</span> playIdx <span class="token operator">=</span> index <span class="token operator">+</span> teamTdx
+	playIdx <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>playIdx<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span> <span class="token comment">--四个复活点</span>
+
+	<span class="token keyword">local</span> playPos <span class="token operator">=</span> PlayerPos<span class="token punctuation">[</span>playIdx<span class="token punctuation">]</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> playPos <span class="token keyword">then</span> playPos <span class="token operator">=</span> PlayerPos<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">end</span>
+	Actor<span class="token punctuation">:</span><span class="token function">setPosition</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> playPos<span class="token punctuation">.</span>x<span class="token operator">+</span><span class="token number">0.5</span><span class="token punctuation">,</span> playPos<span class="token punctuation">.</span>y<span class="token punctuation">,</span> playPos<span class="token punctuation">.</span>z<span class="token operator">+</span><span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">--清理地图上的方块/道具</span>
+<span class="token keyword">function</span> <span class="token function">clearItems</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">#</span>wpBlockPos <span class="token keyword">do</span>
+		<span class="token keyword">local</span> wpPos <span class="token operator">=</span> wpBlockPos<span class="token punctuation">[</span>idx<span class="token punctuation">]</span>
+		<span class="token keyword">local</span> ret<span class="token punctuation">,</span> blockId <span class="token operator">=</span> Block<span class="token punctuation">:</span><span class="token function">getBlockID</span><span class="token punctuation">(</span>wpPos<span class="token punctuation">.</span>x<span class="token punctuation">,</span> wpPos<span class="token punctuation">.</span>y<span class="token punctuation">,</span> wpPos<span class="token punctuation">.</span>z<span class="token punctuation">)</span>
+		<span class="token keyword">local</span> ret <span class="token operator">=</span> Block<span class="token punctuation">:</span><span class="token function">destroyBlock</span><span class="token punctuation">(</span>wpPos<span class="token punctuation">.</span>x<span class="token punctuation">,</span> wpPos<span class="token punctuation">.</span>y<span class="token punctuation">,</span> wpPos<span class="token punctuation">.</span>z<span class="token punctuation">)</span>
+	<span class="token keyword">end</span>
+
+	<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">#</span>itemObjIds <span class="token keyword">do</span>
+		<span class="token keyword">local</span> objId <span class="token operator">=</span> itemObjIds<span class="token punctuation">[</span>idx<span class="token punctuation">]</span>
+		<span class="token keyword">local</span> ret <span class="token operator">=</span> World<span class="token punctuation">:</span><span class="token function">despawnItemByObjid</span><span class="token punctuation">(</span>objId<span class="token punctuation">)</span>
+	<span class="token keyword">end</span>
+
+	wpBlockPos <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment">--重置方块表</span>
+	itemObjIds <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token comment">--重置道具表</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">--随机生成武器方块/铁铲道具</span>
+<span class="token keyword">function</span> <span class="token function">rgensItems</span><span class="token punctuation">(</span>gType<span class="token punctuation">)</span>
+	<span class="token comment">--生成坦克大战的铁铲</span>
+	<span class="token keyword">if</span> gType <span class="token operator">==</span> <span class="token string">'T'</span> <span class="token keyword">then</span>
+		<span class="token keyword">local</span> ccIdx <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">#</span>bufItems<span class="token punctuation">)</span>
+		<span class="token keyword">local</span> xPos<span class="token punctuation">,</span> zPos <span class="token operator">=</span> <span class="token function">GetPositionX</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">local</span> ret<span class="token punctuation">,</span> objIds <span class="token operator">=</span> World<span class="token punctuation">:</span><span class="token function">spawnItem</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> bufItems<span class="token punctuation">[</span>ccIdx<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> ret<span class="token operator">==</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">then</span> itemObjIds<span class="token punctuation">[</span><span class="token operator">#</span>itemObjIds<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> objIds <span class="token keyword">end</span>
+		<span class="token keyword">return</span>
+	<span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> blocks <span class="token operator">=</span> table<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>wpBlocks<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> gType<span class="token operator">==</span><span class="token string">'S'</span> <span class="token keyword">then</span> <span class="token comment">--生成特殊枪型:狙击枪</span>
+		<span class="token keyword">local</span> xPos<span class="token punctuation">,</span> zPos <span class="token operator">=</span> <span class="token function">GetPositionX</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">local</span> ret <span class="token operator">=</span> Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> blocks<span class="token punctuation">[</span><span class="token operator">#</span>blocks<span class="token punctuation">]</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> ret <span class="token operator">==</span> ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">then</span>
+			wpBlockPos<span class="token punctuation">[</span><span class="token operator">#</span>wpBlockPos<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>x<span class="token operator">=</span>xPos<span class="token punctuation">,</span> y<span class="token operator">=</span>Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> z<span class="token operator">=</span>zPos<span class="token punctuation">}</span>
+		<span class="token keyword">end</span>
+		<span class="token keyword">return</span>
+	<span class="token keyword">end</span>
+
+	<span class="token comment">--生成普通枪械或子弹</span>
+	<span class="token keyword">local</span> wpsz <span class="token operator">=</span> <span class="token operator">#</span>blocks<span class="token operator">-</span><span class="token number">1</span>
+	<span class="token keyword">local</span> idx1 <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> wpsz<span class="token punctuation">)</span>
+	<span class="token keyword">local</span> idx2 <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> wpsz<span class="token punctuation">)</span>
+
+	<span class="token keyword">while</span> idx1<span class="token operator">==</span>idx2 <span class="token keyword">do</span>
+		idx2 <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> wpsz<span class="token punctuation">)</span>
+	<span class="token keyword">end</span>
+
+	<span class="token keyword">for</span> idx <span class="token operator">=</span> idx1<span class="token punctuation">,</span> idx2<span class="token punctuation">,</span> idx2<span class="token operator">-</span>idx1 <span class="token keyword">do</span>
+		<span class="token keyword">local</span> xPos<span class="token punctuation">,</span> zPos <span class="token operator">=</span> <span class="token function">GetPositionX</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">local</span> ret <span class="token operator">=</span> Block<span class="token punctuation">:</span><span class="token function">setBlockAll</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> zPos<span class="token punctuation">,</span> blocks<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> ret <span class="token operator">==</span> ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">then</span>
+			wpBlockPos<span class="token punctuation">[</span><span class="token operator">#</span>wpBlockPos<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>x<span class="token operator">=</span>xPos<span class="token punctuation">,</span> y<span class="token operator">=</span>Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> z<span class="token operator">=</span>zPos<span class="token punctuation">}</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-----------------开发者事件-----------------</span>
+Game_Started <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	tickCount <span class="token operator">=</span> <span class="token number">0</span>
+	itemcTime <span class="token operator">=</span> <span class="token number">0</span>
+	isGameStart <span class="token operator">=</span> <span class="token keyword">true</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> isGRuleInit <span class="token keyword">then</span> <span class="token function">InitGameRule</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">end</span>
+
+	<span class="token function">InitCenterPoint</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token function">InitGameMaps</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token comment">--InitColorBlock()</span>
+
+	<span class="token comment">--主机PlayInit设置失败</span>
+	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> playerId <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getMainPlayerUin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> ret<span class="token operator">~=</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">or</span> playerId<span class="token operator">&lt;=</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+	Backpack<span class="token punctuation">:</span><span class="token function">clearAllPack</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+	Player<span class="token punctuation">:</span><span class="token function">setTeam</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> Teamx<span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+
+	<span class="token function">InitPlayerData</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span><span class="token comment">--初始化玩家信息</span>
+	<span class="token function">SetPositionPx</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span> <span class="token comment">--初始化玩家位置</span>
+
+	<span class="token comment">--复活保护BUFF&lt;BuffId要除1000&gt;/GameRule可设置</span>
+	<span class="token keyword">local</span> buffId <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">999002</span><span class="token operator">/</span><span class="token number">1000</span><span class="token punctuation">)</span>
+	Player<span class="token punctuation">:</span><span class="token function">addBuff</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> buffId<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">10000</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">local</span> buffId1 <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">27003</span><span class="token operator">/</span><span class="token number">1000</span><span class="token punctuation">)</span>
+	Player<span class="token punctuation">:</span><span class="token function">addBuff</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> buffId1<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">500000</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+Game_RunX <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> isGameEnded <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> <span class="token function">IsCanTick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+	itemcTime <span class="token operator">=</span> itemcTime <span class="token operator">+</span> <span class="token number">1</span>
+
+	<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">#</span>TmEffects <span class="token keyword">do</span> <span class="token comment">-- 刷新各队雾圈</span>
+		<span class="token keyword">local</span> lastTime <span class="token operator">=</span> TmEffects<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">.</span>lastTime<span class="token operator">-</span><span class="token number">1</span>
+		<span class="token keyword">local</span> glEffectId <span class="token operator">=</span> TmEffects<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">.</span>glEffectId
+		<span class="token keyword">if</span> lastTime<span class="token operator">&lt;=</span><span class="token number">0</span> <span class="token keyword">and</span> glEffectId<span class="token operator">~=</span><span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">then</span>
+			<span class="token keyword">local</span> ret <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">removeRenderGlobalEffect</span><span class="token punctuation">(</span>glEffectId<span class="token punctuation">)</span>
+		 	<span class="token keyword">if</span> ret <span class="token operator">==</span> ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">then</span> glEffectId <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">end</span>
+
+		 	TmEffects<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">.</span>glEffectId <span class="token operator">=</span> glEffectId
+		<span class="token keyword">end</span>
+		TmEffects<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">.</span>lastTime <span class="token operator">=</span> lastTime
+	<span class="token keyword">end</span>
+
+	<span class="token comment">-- 每30秒刷新随机道具 15秒后清理</span>
+	<span class="token keyword">if</span> math<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>itemcTime<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token function">rgensItems</span><span class="token punctuation">(</span><span class="token string">'S'</span><span class="token punctuation">)</span>
+	<span class="token keyword">elseif</span> math<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>itemcTime<span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token function">rgensItems</span><span class="token punctuation">(</span><span class="token string">'N'</span><span class="token punctuation">)</span>
+	<span class="token keyword">elseif</span> math<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>itemcTime<span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token function">clearItems</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> randVal <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token comment">--随机生成铁铲</span>
+	<span class="token keyword">if</span> math<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>randVal<span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token function">rgensItems</span><span class="token punctuation">(</span><span class="token string">'T'</span><span class="token punctuation">)</span> <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+Game_Ended <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> LoserIdx <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token keyword">then</span> <span class="token comment">--非超时结束</span>
+		<span class="token keyword">local</span> ret<span class="token punctuation">,</span> playerId <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getMainPlayerUin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> ret<span class="token operator">~=</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">or</span> playerId<span class="token operator">&lt;=</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+		<span class="token keyword">local</span> ret<span class="token punctuation">,</span> teamId <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getTeam</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+		<span class="token keyword">if</span> ret<span class="token operator">~=</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">or</span> teamId<span class="token operator">&lt;=</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token keyword">return</span> <span class="token keyword">end</span>
+
+		<span class="token keyword">if</span> LoserIdx<span class="token operator">==</span>Teamx<span class="token punctuation">.</span>blue <span class="token keyword">then</span>
+			<span class="token function">Battle_Ended</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">,</span> Gamex<span class="token punctuation">.</span>win<span class="token punctuation">)</span>
+
+			<span class="token keyword">local</span> strIdx <span class="token operator">=</span> teamId<span class="token operator">==</span>Teamx<span class="token punctuation">.</span>red <span class="token keyword">and</span> <span class="token number">270</span> <span class="token keyword">or</span> <span class="token number">271</span>
+			<span class="token keyword">local</span> ret<span class="token punctuation">,</span> txtInfox <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">getDefString</span><span class="token punctuation">(</span>strIdx<span class="token punctuation">)</span>
+			Chat<span class="token punctuation">:</span><span class="token function">sendChat</span><span class="token punctuation">(</span>txtInfox<span class="token punctuation">,</span>  chatType<span class="token punctuation">)</span>
+		<span class="token keyword">else</span>
+			<span class="token function">Battle_Ended</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">,</span> Gamex<span class="token punctuation">.</span>win<span class="token punctuation">)</span>
+			<span class="token keyword">local</span> strIdx <span class="token operator">=</span> teamId<span class="token operator">==</span>Teamx<span class="token punctuation">.</span>blue <span class="token keyword">and</span> <span class="token number">270</span> <span class="token keyword">or</span> <span class="token number">271</span>
+			<span class="token keyword">local</span> ret<span class="token punctuation">,</span> txtInfox <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">getDefString</span><span class="token punctuation">(</span>strIdx<span class="token punctuation">)</span>
+			Chat<span class="token punctuation">:</span><span class="token function">sendChat</span><span class="token punctuation">(</span>txtInfox<span class="token punctuation">,</span>  chatType<span class="token punctuation">)</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+Game_TimeOver <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">end</span>
+
+Player_Inited <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> isGRuleInit <span class="token keyword">then</span> <span class="token function">InitGameRule</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">local</span> playerId <span class="token operator">=</span> args<span class="token punctuation">[</span><span class="token string">'eventobjid'</span><span class="token punctuation">]</span>
+	Players<span class="token punctuation">[</span><span class="token operator">#</span>Players<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> playerId
+
+	<span class="token keyword">local</span> playerCount <span class="token operator">=</span> <span class="token operator">#</span>Players
+	<span class="token keyword">if</span> math<span class="token punctuation">.</span><span class="token function">mod</span><span class="token punctuation">(</span>playerCount<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token number">1</span> <span class="token keyword">then</span><span class="token comment">--单数红队</span>
+		Player<span class="token punctuation">:</span><span class="token function">setTeam</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> Teamx<span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+	<span class="token keyword">else</span> <span class="token comment">--双数蓝队</span>
+		Player<span class="token punctuation">:</span><span class="token function">setTeam</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+	<span class="token keyword">end</span>
+
+	<span class="token comment">--[[
+	--红蓝两队人数
+	local ret1, rtNum = Team:getTeamPlayers(Teamx.red, -1)
+	local ret2, btNum = Team:getTeamPlayers(Teamx.blue, -1)
+	if ret1 ~= ErrorCode.OK or ret1 ~= ErrorCode.OK then return end
+
+	if rtNum &lt;= btNum then--两队人数一样/优先加入红队
+		local ret = Player:setTeam(playerId, Teamx.red)
+		if ret==ErrorCode.OK then PlayerTdx = rtNum+1 end
+	else
+		local ret = Player:setTeam(playerId, Teamx.blue)
+		if ret==ErrorCode.OK then PlayerTdx = rtNum+1 end
+	end
+	--]]</span>
+<span class="token keyword">end</span>
+
+Player_JoinTeam <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>trigger_obj<span class="token punctuation">)</span>
+	<span class="token keyword">local</span> playerId <span class="token operator">=</span> trigger_obj<span class="token punctuation">[</span><span class="token string">'eventobjid'</span><span class="token punctuation">]</span>
+
+	<span class="token keyword">if</span> isGameStart <span class="token keyword">then</span><span class="token comment">--游戏已经开始</span>
+		<span class="token function">InitPlayerData</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+
+		<span class="token keyword">local</span> ret<span class="token punctuation">,</span> teamId <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getTeam</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+		<span class="token keyword">if</span> teamId <span class="token keyword">and</span> teamId<span class="token operator">&gt;</span><span class="token number">0</span> <span class="token keyword">then</span> <span class="token function">SetPositionPx</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span> <span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+Player_Dead <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>trigger_obj<span class="token punctuation">)</span>
+	<span class="token keyword">local</span> killById <span class="token operator">=</span> trigger_obj<span class="token punctuation">[</span><span class="token string">'toobjid'</span><span class="token punctuation">]</span>
+	<span class="token keyword">local</span> playerId <span class="token operator">=</span> trigger_obj<span class="token punctuation">[</span><span class="token string">'eventobjid'</span><span class="token punctuation">]</span>
+
+	<span class="token comment">--暂时不做处理 //TODO</span>
+<span class="token keyword">end</span>
+
+Player_Revive <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>trigger_obj<span class="token punctuation">)</span>
+	<span class="token keyword">local</span> playerId <span class="token operator">=</span> trigger_obj<span class="token punctuation">[</span><span class="token string">'eventobjid'</span><span class="token punctuation">]</span>
+
+	<span class="token comment">--添加复活保护buff</span>
+	<span class="token keyword">local</span> buffId <span class="token operator">=</span> math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">999002</span><span class="token operator">/</span><span class="token number">1000</span><span class="token punctuation">)</span>
+	Player<span class="token punctuation">:</span><span class="token function">addBuff</span><span class="token punctuation">(</span>playerId<span class="token punctuation">,</span> buffId<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token operator">*</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token comment">--默认5T</span>
+
+	<span class="token function">SetPositionPx</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+	<span class="token function">InitPlayerData</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+BackPack_AddItem <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>trigger_obj<span class="token punctuation">)</span>
+	<span class="token keyword">local</span> itemId <span class="token operator">=</span> trigger_obj<span class="token punctuation">[</span><span class="token string">'itemid'</span><span class="token punctuation">]</span>
+	<span class="token keyword">local</span> itemNum <span class="token operator">=</span> trigger_obj<span class="token punctuation">[</span><span class="token string">'itemnum'</span><span class="token punctuation">]</span>
+	<span class="token keyword">local</span> playerId <span class="token operator">=</span> trigger_obj<span class="token punctuation">[</span><span class="token string">'eventobjid'</span><span class="token punctuation">]</span>
+
+	<span class="token comment">--local bufItems = {11023, 11024, 11025, 11015}</span>
+	<span class="token keyword">local</span> lastTime <span class="token operator">=</span> <span class="token number">0</span>
+	<span class="token keyword">if</span> itemId<span class="token operator">==</span>bufItems<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">then</span> lastTime<span class="token operator">=</span><span class="token number">5</span>
+	<span class="token keyword">elseif</span> itemId<span class="token operator">==</span>bufItems<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token keyword">then</span> lastTime<span class="token operator">=</span><span class="token number">10</span>
+	<span class="token keyword">elseif</span> itemId<span class="token operator">==</span>bufItems<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token keyword">then</span> lastTime<span class="token operator">=</span><span class="token number">15</span>
+	<span class="token keyword">elseif</span> itemId<span class="token operator">==</span>bufItems<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token keyword">then</span> <span class="token keyword">end</span>
+
+	<span class="token keyword">if</span> lastTime <span class="token operator">~=</span> <span class="token number">0</span> <span class="token keyword">then</span><span class="token comment">--绘制雾圈</span>
+		<span class="token keyword">local</span> ret<span class="token punctuation">,</span> teamId <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getTeam</span><span class="token punctuation">(</span>playerId<span class="token punctuation">)</span>
+		<span class="token keyword">local</span> effectEntity <span class="token operator">=</span> TmEffects<span class="token punctuation">[</span>teamId<span class="token punctuation">]</span>
+		<span class="token keyword">if</span> effectEntity <span class="token operator">~=</span> <span class="token keyword">nil</span> <span class="token keyword">then</span>
+			<span class="token keyword">local</span> oldTime <span class="token operator">=</span> effectEntity<span class="token punctuation">.</span>lastTime
+			effectEntity<span class="token punctuation">.</span>lastTime <span class="token operator">=</span> oldTime<span class="token operator">+</span>lastTime
+			<span class="token keyword">if</span> effectEntity<span class="token punctuation">.</span>glEffectId <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">then</span>
+				<span class="token keyword">local</span> ret<span class="token punctuation">,</span> glEffectId <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">addRenderGlobalEffect</span><span class="token punctuation">(</span><span class="token string">&quot;particles/Fog.ent&quot;</span><span class="token punctuation">)</span>
+				<span class="token keyword">if</span> ret<span class="token operator">==</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">and</span> glEffectId <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token keyword">then</span>
+					Game<span class="token punctuation">:</span><span class="token function">setRenderGlobalEffectPos</span><span class="token punctuation">(</span>glEffectId<span class="token punctuation">,</span> effectEntity<span class="token punctuation">.</span>xPos<span class="token punctuation">,</span> Y<span class="token punctuation">,</span> effectEntity<span class="token punctuation">.</span>zPos<span class="token punctuation">)</span>
+					Game<span class="token punctuation">:</span><span class="token function">setRenderGlobalEffectScale</span><span class="token punctuation">(</span>glEffectId<span class="token punctuation">,</span> <span class="token number">1.25</span><span class="token punctuation">,</span> <span class="token number">0.045</span><span class="token punctuation">,</span> <span class="token number">1.25</span><span class="token punctuation">)</span>
+				<span class="token keyword">end</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+Block_Destroyed <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>trigger_obj<span class="token punctuation">)</span>
+	<span class="token keyword">local</span> blockId <span class="token operator">=</span> trigger_obj<span class="token punctuation">.</span>blockid
+	<span class="token keyword">local</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> trigger_obj<span class="token punctuation">.</span>x<span class="token punctuation">,</span> trigger_obj<span class="token punctuation">.</span>y<span class="token punctuation">,</span> trigger_obj<span class="token punctuation">.</span>z
+
+	<span class="token keyword">local</span> item <span class="token operator">=</span> wpBlocks<span class="token punctuation">[</span>blockId<span class="token punctuation">]</span>
+	<span class="token keyword">if</span> item <span class="token operator">~=</span> <span class="token keyword">nil</span> <span class="token keyword">then</span> <span class="token comment">--设置道具获取</span>
+		<span class="token comment">--直接创建武器道具</span>
+		<span class="token keyword">local</span> ret<span class="token punctuation">,</span> objIds <span class="token operator">=</span> World<span class="token punctuation">:</span><span class="token function">spawnItem</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z<span class="token punctuation">,</span> item<span class="token punctuation">.</span>idx<span class="token punctuation">,</span> item<span class="token punctuation">.</span>num<span class="token punctuation">)</span>
+		<span class="token keyword">if</span> ret<span class="token operator">==</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">then</span> itemObjIds<span class="token punctuation">[</span><span class="token operator">#</span>itemObjIds<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> objIds <span class="token keyword">end</span>
+
+		<span class="token comment">--Or 直接放进玩家背包</span>
+		<span class="token comment">--local ret = Backpack:enoughSpaceForItem(actorId, item.idx, item.num)</span>
+		<span class="token comment">--if ret==ErrorCode.OK then Player:gainItems(actorId, item.idx, item.num, 1) end</span>
+	<span class="token keyword">end</span>
+
+	<span class="token keyword">if</span> blockId<span class="token operator">==</span>TmCityIdx <span class="token keyword">then</span> <span class="token comment">--城池被破坏</span>
+		<span class="token keyword">for</span> idx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">#</span>TmCityPos <span class="token keyword">do</span>
+			<span class="token keyword">local</span> cityIsDestry <span class="token operator">=</span> <span class="token keyword">true</span>
+			<span class="token keyword">local</span> cxPos <span class="token operator">=</span> TmCityPos<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">.</span>xPos
+			<span class="token keyword">local</span> czPos <span class="token operator">=</span> TmCityPos<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">.</span>zPos
+			<span class="token keyword">for</span> yPos<span class="token operator">=</span>Y<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span> Y<span class="token operator">+</span><span class="token number">2</span> <span class="token keyword">do</span><span class="token comment">--树干全被摧毁</span>
+				<span class="token keyword">for</span> xPos<span class="token operator">=</span>cxPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> cxPos <span class="token keyword">do</span>
+					<span class="token keyword">for</span> zPos<span class="token operator">=</span>czPos<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> czPos <span class="token keyword">do</span>
+						<span class="token keyword">local</span> ret<span class="token punctuation">,</span> blkId<span class="token operator">=</span> Block<span class="token punctuation">:</span><span class="token function">getBlockID</span><span class="token punctuation">(</span>xPos<span class="token punctuation">,</span> yPos<span class="token punctuation">,</span> zPos<span class="token punctuation">)</span>
+						<span class="token keyword">if</span> blkId <span class="token operator">==</span> TmCityIdx <span class="token keyword">then</span>
+							cityIsDestry <span class="token operator">=</span> <span class="token keyword">false</span>
+							<span class="token keyword">break</span>
+						<span class="token keyword">end</span>
+					<span class="token keyword">end</span>
+				<span class="token keyword">end</span>
+			<span class="token keyword">end</span>
+
+			<span class="token keyword">if</span> cityIsDestry <span class="token keyword">then</span>
+				LoserIdx <span class="token operator">=</span> idx
+				Game<span class="token punctuation">:</span><span class="token function">doGameEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+				isGameEnded <span class="token operator">=</span> <span class="token keyword">true</span>
+				<span class="token keyword">return</span>
+			<span class="token keyword">end</span>
+		<span class="token keyword">end</span>
+	<span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">--计算游戏结果</span>
+<span class="token keyword">function</span> <span class="token function">Battle_Ended</span><span class="token punctuation">(</span>teamId<span class="token punctuation">,</span> retType<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> teamId <span class="token operator">==</span> Teamx<span class="token punctuation">.</span>red <span class="token keyword">then</span>
+		<span class="token comment">-- 设置红队游戏结果</span>
+		Team<span class="token punctuation">:</span><span class="token function">setTeamResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">,</span> retType<span class="token punctuation">)</span>
+		Team<span class="token punctuation">:</span><span class="token function">setTeamPlayersResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">,</span> retType<span class="token punctuation">)</span>
+		<span class="token comment">-- 设置蓝队游戏结果</span>
+		<span class="token keyword">local</span> blueRet <span class="token operator">=</span> <span class="token punctuation">(</span>retType<span class="token operator">==</span>Gamex<span class="token punctuation">.</span>win <span class="token keyword">and</span> Gamex<span class="token punctuation">.</span>lose<span class="token punctuation">)</span> <span class="token keyword">or</span> Gamex<span class="token punctuation">.</span>win
+		Team<span class="token punctuation">:</span><span class="token function">setTeamResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">,</span> blueRet<span class="token punctuation">)</span>
+		Team<span class="token punctuation">:</span><span class="token function">setTeamPlayersResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">,</span> blueRet<span class="token punctuation">)</span>
+		<span class="token comment">--print(&quot;Battle1 ================&gt;&gt;&gt;&quot;, teamId, retType, blueRet)</span>
+	<span class="token keyword">elseif</span> teamId <span class="token operator">==</span> Teamx<span class="token punctuation">.</span>blue <span class="token keyword">then</span>
+		<span class="token comment">-- 设置蓝队游戏结果</span>
+		Team<span class="token punctuation">:</span><span class="token function">setTeamResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">,</span> retType<span class="token punctuation">)</span>
+		Team<span class="token punctuation">:</span><span class="token function">setTeamPlayersResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">,</span> retType<span class="token punctuation">)</span>
+		<span class="token comment">-- 设置红队游戏结果</span>
+		<span class="token keyword">local</span> redRet <span class="token operator">=</span> <span class="token punctuation">(</span>retType<span class="token operator">==</span>Gamex<span class="token punctuation">.</span>win <span class="token keyword">and</span> Gamex<span class="token punctuation">.</span>lose<span class="token punctuation">)</span> <span class="token keyword">or</span> Gamex<span class="token punctuation">.</span>win
+		Team<span class="token punctuation">:</span><span class="token function">setTeamResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">,</span> redRet<span class="token punctuation">)</span>
+		Team<span class="token punctuation">:</span><span class="token function">setTeamPlayersResults</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">,</span> redRet<span class="token punctuation">)</span>
+		<span class="token comment">--print(&quot;Battle2 ================&gt;&gt;&gt;&quot;, teamId, retType, redRet)</span>
+	<span class="token keyword">end</span>
+
+	<span class="token function">ShowGBattleUI</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">--设置战斗总结界面</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">--游戏结算界面</span>
+<span class="token keyword">function</span> <span class="token function">ShowGBattleUI</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token comment">-- 设置排行/分数</span>
+	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> rank <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getGameRanking</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> <span class="token keyword">not</span> rank <span class="token keyword">or</span> rank<span class="token operator">==</span><span class="token number">0</span> <span class="token keyword">then</span> rank <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">end</span>
+    <span class="token keyword">local</span> ret<span class="token punctuation">,</span> score <span class="token operator">=</span> Player<span class="token punctuation">:</span><span class="token function">getGameScore</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">-- 队伍数量及成员量</span>
+    <span class="token keyword">local</span> ret1<span class="token punctuation">,</span> teamNum <span class="token operator">=</span> Team<span class="token punctuation">:</span><span class="token function">getNumTeam</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">local</span> ret2<span class="token punctuation">,</span> redNum <span class="token operator">=</span> Team<span class="token punctuation">:</span><span class="token function">getTeamPlayers</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+    <span class="token keyword">local</span> ret3<span class="token punctuation">,</span> blueNum <span class="token operator">=</span> Team<span class="token punctuation">:</span><span class="token function">getTeamPlayers</span><span class="token punctuation">(</span>Teamx<span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+  	<span class="token keyword">local</span> totalPlayers <span class="token operator">=</span> <span class="token number">1</span>
+  	<span class="token keyword">if</span> ret2<span class="token operator">==</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">and</span> ret3<span class="token operator">==</span>ErrorCode<span class="token punctuation">.</span>OK <span class="token keyword">then</span>
+  		totalPlayers <span class="token operator">=</span> redNum<span class="token operator">+</span>blueNum
+  	<span class="token keyword">end</span>
+
+  	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> txtTitle <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">getDefString</span><span class="token punctuation">(</span>rank<span class="token operator">==</span><span class="token number">1</span> <span class="token keyword">and</span> <span class="token number">8028</span> <span class="token keyword">or</span> <span class="token number">8029</span><span class="token punctuation">)</span>
+  	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> txtTRank <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">getDefString</span><span class="token punctuation">(</span><span class="token number">8032</span><span class="token punctuation">)</span>
+  	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> txtRanker <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">getDefString</span><span class="token punctuation">(</span><span class="token number">8030</span><span class="token punctuation">)</span>
+  	<span class="token keyword">local</span> ret<span class="token punctuation">,</span> txtDefeat <span class="token operator">=</span> Game<span class="token punctuation">:</span><span class="token function">getDefString</span><span class="token punctuation">(</span><span class="token number">3176</span><span class="token punctuation">)</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'left_title'</span><span class="token punctuation">,</span> txtTRank<span class="token operator">..</span><span class="token function">tostring</span><span class="token punctuation">(</span>rank<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">--第1/1</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'right_title'</span><span class="token punctuation">,</span> <span class="token string">&quot;/&quot;</span><span class="token operator">..</span>totalPlayers<span class="token punctuation">)</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'left_desc'</span><span class="token punctuation">,</span> txtTitle<span class="token punctuation">)</span><span class="token comment">--大吉大利/继续努力</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'left_little_desc'</span><span class="token punctuation">,</span> txtRanker<span class="token operator">..</span><span class="token function">tostring</span><span class="token punctuation">(</span>rank<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">--排名</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'right_little_desc'</span><span class="token punctuation">,</span> txtDefeat<span class="token operator">..</span><span class="token function">tostring</span><span class="token punctuation">(</span>score<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">--得分</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'battle_btn'</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'result'</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'result_bkg'</span><span class="token punctuation">,</span> <span class="token keyword">false</span><span class="token punctuation">)</span>
+	UI<span class="token punctuation">:</span><span class="token function">setGBattleUI</span><span class="token punctuation">(</span><span class="token string">'reopen'</span><span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">--添加监听事件--</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Game.Start]=]</span><span class="token punctuation">,</span> Game_Started<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Game.Run]=]</span><span class="token punctuation">,</span> Game_RunX<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Game.End]=]</span><span class="token punctuation">,</span> Game_Ended<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Game.TimeOver]=]</span><span class="token punctuation">,</span> Game_TimeOver<span class="token punctuation">)</span>
+
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Player.Init]=]</span><span class="token punctuation">,</span> Player_Inited<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Player.Die]=]</span><span class="token punctuation">,</span> Player_Dead<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Player.Revive]=]</span><span class="token punctuation">,</span> Player_Revive<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Player.JoinTeam]=]</span><span class="token punctuation">,</span> Player_JoinTeam<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Player.AddItem]=]</span><span class="token punctuation">,</span> BackPack_AddItem<span class="token punctuation">)</span>
+
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Actor.Die]=]</span><span class="token punctuation">,</span> Monster_Dead<span class="token punctuation">)</span>
+ScriptSupportEvent<span class="token punctuation">:</span><span class="token function">registerEvent</span><span class="token punctuation">(</span><span class="token string">[=[Block.DestroyBy]=]</span><span class="token punctuation">,</span> Block_Destroyed<span class="token punctuation">)</span>
+
+<span class="token keyword">end</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Lua/zfdm.html" class="prev">
+        争分夺秒
+      </a></span> <span class="next"><a href="/Lua/Stone_code.html">
+        Stone Code
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.ef735673.js" defer></script><script src="/assets/js/2.b51029ec.js" defer></script><script src="/assets/js/44.d7674f0c.js" defer></script>
+  </body>
+</html>
